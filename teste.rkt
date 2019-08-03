@@ -1,19 +1,45 @@
- #lang racket
+#lang racket
 
-;;Abre o arquivo .geo
+;; Abre o arquivo .geo
 (define geo (open-output-file "teste.geo"))
 
+
+
+;; Recebe uma string e um numero a string de ambos concatenados
 (define (gerarId string numero)
-  (string-append string (number->string numero)))
+    (string-append string (number->string numero)))
 
-(define (gerarQuadras x y i contadorQuadras)
-  (cond [(equal? contadorQuadras 25) 
-            (display (string-append "q " (gerarId "quadra" contadorQuadras) " " (number->string x) " " (number->string y) " 120 80\n") geo)]
 
-        [(equal? i 5) 
-            (display (string-append "q " (gerarId "quadra" contadorQuadras) " " (number->string x) " " (number->string y) " 120 80\n") geo) 
-            (gerarQuadras 25 (+ y 95) 0 (+ contadorQuadras 1))]
 
-        [#t 
-            (display (string-append "q " (gerarId "quadra" contadorQuadras) " " (number->string x) " " (number->string y) " 120 80\n") geo) 
-            (gerarQuadras (+ x 135) y (+ i 1) (+ contadorQuadras 1))])) 
+(define (gerarElementos x y w h i contadorQuadras contadorHidrantes)
+    (cond
+        [(equal? contadorQuadras 24)
+           (imprimeQuadras x y w h contadorQuadras)
+           (imprimeHidrantes x y contadorHidrantes)]
+         
+
+        [(equal? i 4)
+           (imprimeQuadras x y w h contadorQuadras)
+           (imprimeHidrantes x y contadorHidrantes)
+           (gerarElementos 25 (+ y 95) w h 0 (+ contadorQuadras 1) (+ contadorHidrantes 1))]
+
+        [#t
+           (imprimeQuadras x y w h contadorQuadras)
+           (imprimeHidrantes x y contadorHidrantes)
+           (gerarElementos (+ x 135) y w h (+ i 1) (+ contadorQuadras 1) (+ contadorHidrantes 1))]))
+
+
+
+(define (imprimeQuadras x y w h id)
+    (display (string-append "q " (gerarId "quadra" id) " " (number->string x) " " (number->string y) " " (number->string w) " " (number->string h) "\n") geo))
+
+
+
+(define (imprimeHidrantes x y id)
+    (display (string-append "h " (gerarId "hidrante" id) ".1" " " (number->string (+ x 60)) " " (number->string y) "\n") geo)
+    (display (string-append "h " (gerarId "hidrante" id) ".2" " " (number->string (+ x 120)) " " (number->string (+ y 40)) "\n") geo)
+    (display (string-append "h " (gerarId "hidrante" id) ".3" " " (number->string (+ x 60)) " " (number->string (+ y 80)) "\n") geo)
+    (display (string-append "h " (gerarId "hidrante" id) ".4" " " (number->string x) " " (number->string (+ y 40)) "\n") geo))
+
+
+    
