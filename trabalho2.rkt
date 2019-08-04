@@ -1,7 +1,9 @@
 #lang racket
 
 ;; Abre o arquivo .geo
-(define geo (open-output-file "teste.geo"))
+(define geo (open-output-file "b1.geo"))
+(define geo2 (open-output-file "b2.geo"))
+(define geo3 (open-output-file "b3.geo"))
 
 
 
@@ -66,4 +68,13 @@
         [#t
            (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") geo)
            (imprimeSemaforos (+ x 127.5) y (+ i 1) (+ contadorSemaforos 1))]))
+
+
+;; Bloco de codigo piloto
+(gerarElementos 25 25 120 80 0 0 0 0 0)
+(close-output-port geo)
+(close-output-port geo2)
+(close-output-port geo3)
+
+
            
