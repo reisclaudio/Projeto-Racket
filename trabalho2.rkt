@@ -47,7 +47,8 @@
     (display (string-append "h " (gerarId "hidrante" id) ".1" " " (number->string (+ x 60)) " " (number->string y) "\n") arquivo)
     (display (string-append "h " (gerarId "hidrante" id) ".2" " " (number->string (+ x 120)) " " (number->string (+ y 40)) "\n") arquivo)
     (display (string-append "h " (gerarId "hidrante" id) ".3" " " (number->string (+ x 60)) " " (number->string (+ y 80)) "\n") arquivo)
-    (display (string-append "h " (gerarId "hidrante" id) ".4" " " (number->string x) " " (number->string (+ y 40)) "\n") arquivo))
+    (display (string-append "h " (gerarId "hidrante" id) ".4" " " (number->string x) " " (number->string (+ y 40)) "\n") arquivo)
+)
 
 
 
@@ -59,21 +60,59 @@
 (define(imprimeSemaforos tamanhoCidade x y i contadorSemaforos arquivo)
     (cond
         [(equal? contadorSemaforos (* (- tamanhoCidade 1) (- tamanhoCidade 1)))
-           (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)]
+           (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
+        ]
 
         [(equal? i (- tamanhoCidade 2))
            (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
-           (imprimeSemaforos tamanhoCidade 152.5 (+ y 95) 0 (+ contadorSemaforos 1) arquivo)]
+           (imprimeSemaforos tamanhoCidade 152.5 (+ y 95) 0 (+ contadorSemaforos 1) arquivo)
+        ]
 
         [#t
            (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
-           (imprimeSemaforos tamanhoCidade (+ x 135) y (+ i 1) (+ contadorSemaforos 1) arquivo)]))
+           (imprimeSemaforos tamanhoCidade (+ x 135) y (+ i 1) (+ contadorSemaforos 1) arquivo)
+        ]
+    )
+)
+
+
+
+(define(testesFormas arquivo1 arquivo2 arquivo3)
+    (define x1 (random 660))
+    (define y1 (random 460))
+    (display (string-append "c " "1 " "15 " (number->string x1) " " (number->string y1) "\n") arquivo1)
+
+    (define x2 (random 660))
+    (define y2 (random 460))
+    (display (string-append "r " "2 " "30 " "30 " (number->string x2) " " (number->string y2) "\n") arquivo1)
+
+    (define x3 (random 1335))
+    (define y3 (random 935))
+    (display (string-append "c " "1 " "15 " (number->string x3) " " (number->string y3) "\n") arquivo2)
+
+    (define x4 (random 1335))
+    (define y4 (random 935))
+    (display (string-append "r " "2 " "30 " "30 " (number->string x4) " " (number->string y4) "\n") arquivo2)
+
+    (define x5 (random 2010))
+    (define y5 (random 1410))
+    (display (string-append "c " "1 " "15 " (number->string x5) " " (number->string y5) "\n") arquivo3)
+
+    (define x6 (random 2010))
+    (define y6 (random 1410))
+    (display (string-append "r " "2 " "30 " "30 " (number->string x6) " " (number->string y6) "\n") arquivo3)
+)
+
 
 
 ;; Bloco de codigo piloto
 (gerarElementos 5 25 25 120 80 0 0 0 0 0 geo)
 (gerarElementos 10 25 25 120 80 0 0 0 0 0 geo2)
 (gerarElementos 15 25 25 120 80 0 0 0 0 0 geo3)
+
+(testesFormas geo geo2 geo3)
+
+
 (close-output-port geo)
 (close-output-port geo2)
 (close-output-port geo3)
