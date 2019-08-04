@@ -11,22 +11,24 @@
 
 
 
-(define (gerarElementos x y w h i contadorQuadras contadorHidrantes)
+(define (gerarElementos x y w h i contadorQuadras contadorHidrantes contadorRadiosBase)
     (cond
         [(equal? contadorQuadras 24)
            (imprimeQuadras x y w h contadorQuadras)
-           (imprimeHidrantes x y contadorHidrantes)]
-         
+           (imprimeHidrantes x y contadorHidrantes)
+           (imprimeRadiosBase x y contadorRadiosBase)]
 
         [(equal? i 4)
            (imprimeQuadras x y w h contadorQuadras)
            (imprimeHidrantes x y contadorHidrantes)
-           (gerarElementos 25 (+ y 95) w h 0 (+ contadorQuadras 1) (+ contadorHidrantes 1))]
+           (cond [(equal? (remainder contadorQuadras 2) 0) (imprimeRadiosBase x y contadorRadiosBase)])
+           (gerarElementos 25 (+ y 95) w h 0 (+ contadorQuadras 1) (+ contadorHidrantes 1) (+ contadorRadiosBase 1))]
 
         [#t
            (imprimeQuadras x y w h contadorQuadras)
            (imprimeHidrantes x y contadorHidrantes)
-           (gerarElementos (+ x 135) y w h (+ i 1) (+ contadorQuadras 1) (+ contadorHidrantes 1))]))
+           (cond [(equal? (remainder contadorQuadras 2) 0) (+ 1 contadorRadiosBase) (imprimeRadiosBase x y contadorRadiosBase)])
+           (gerarElementos (+ x 135) y w h (+ i 1) (+ contadorQuadras 1) (+ contadorHidrantes 1) (+ contadorRadiosBase 1))]))
 
 
 
@@ -41,5 +43,9 @@
     (display (string-append "h " (gerarId "hidrante" id) ".3" " " (number->string (+ x 60)) " " (number->string (+ y 80)) "\n") geo)
     (display (string-append "h " (gerarId "hidrante" id) ".4" " " (number->string x) " " (number->string (+ y 40)) "\n") geo))
 
+
+
+(define(imprimeRadiosBase x y id)
+    (display (string-append "rb " (gerarId "radioBase" id) " " (number->string (+ x 60)) " " (number->string (+ y 40)) "\n") geo))
 
     
