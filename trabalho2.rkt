@@ -63,7 +63,7 @@
 
         [(equal? i (- tamanhoCidade 2))
            (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") geo)
-           (imprimeSemaforos tamanhoCidade 127.5 (+ y 95) 0 (+ contadorSemaforos 1))]
+           (imprimeSemaforos tamanhoCidade 152.5 (+ y 95) 0 (+ contadorSemaforos 1))]
 
         [#t
            (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") geo)
