@@ -10,70 +10,177 @@
 (define qry3 (open-output-file "q3.qry"))
 
 
+
+;; Variavel de aleatoriedade
+(define aleatoriedade 0)
+
+
+
+;; Listas
+(define listaQuadras1 (list null))
+(define listaQuadras2 (list null))
+(define listaQuadras3 (list null))
+
+(define listaHidrantes1 (list null))
+(define listaHidrantes2 (list null))
+(define listaHidrantes3 (list null))
+
+(define listaRB1 (list null))
+(define listaRB2 (list null))
+(define listaRB3 (list null))
+
+(define listaSemaforos1 (list null))
+(define listaSemaforos2 (list null))
+(define listaSemaforos3 (list null))
+
+
+
 ;; Recebe uma string e um numero a string de ambos concatenados
 (define (gerarId string numero)
     (string-append string (number->string numero)))
 
 
 
-(define (gerarElementos tamanhoCidade x y w h i contadorQuadras contadorHidrantes contadorRadiosBase boleanoSemaforo arquivo)
+(define (gerarElementos tamanhoCidade x y w h i contadorQuadras contadorHidrantes contadorRadiosBase boleanoSemaforo arquivo lista)
     (cond
         [(equal? boleanoSemaforo 0)
-           (imprimeSemaforos tamanhoCidade (+ x 127.5) (+ y 87.5) 0 0 arquivo)
-           (gerarElementos tamanhoCidade x y w h i contadorQuadras contadorHidrantes contadorRadiosBase 1 arquivo)]
+           (imprimeSemaforos tamanhoCidade (+ x 127.5) (+ y 87.5) 0 0 arquivo lista)
+           (gerarElementos tamanhoCidade x y w h i contadorQuadras contadorHidrantes contadorRadiosBase 1 arquivo lista)]
 
         [(equal? contadorQuadras(- (* tamanhoCidade tamanhoCidade) 1))
-           (imprimeQuadras x y w h contadorQuadras arquivo)
-           (imprimeHidrantes x y contadorHidrantes arquivo)
-           (imprimeRadiosBase x y contadorRadiosBase arquivo)]
+           (imprimeQuadras x y w h contadorQuadras arquivo lista)
+           (imprimeHidrantes x y contadorHidrantes arquivo lista)
+           (imprimeRadiosBase x y contadorRadiosBase arquivo lista)]
 
         [(equal? i (- tamanhoCidade 1))
-           (imprimeQuadras x y w h contadorQuadras arquivo)
-           (imprimeHidrantes x y contadorHidrantes arquivo)
-           (cond [(equal? (remainder contadorQuadras 2) 0) (imprimeRadiosBase x y contadorRadiosBase arquivo)])
-           (gerarElementos tamanhoCidade 25 (+ y 95) w h 0 (+ contadorQuadras 1) (+ contadorHidrantes 1) (+ contadorRadiosBase 1) 1 arquivo)]
+           (imprimeQuadras x y w h contadorQuadras arquivo lista)
+           (imprimeHidrantes x y contadorHidrantes arquivo lista)
+           (cond [(equal? (remainder contadorQuadras 2) 0) (imprimeRadiosBase x y contadorRadiosBase arquivo lista)])
+           (gerarElementos tamanhoCidade 25 (+ y 95) w h 0 (+ contadorQuadras 1) (+ contadorHidrantes 1) (+ contadorRadiosBase 1) 1 arquivo lista)]
 
         [#t
-           (imprimeQuadras x y w h contadorQuadras arquivo)
-           (imprimeHidrantes x y contadorHidrantes arquivo)
-           (cond [(equal? (remainder contadorQuadras 2) 0) (+ 1 contadorRadiosBase) (imprimeRadiosBase x y contadorRadiosBase arquivo)])
-           (gerarElementos tamanhoCidade (+ x 135) y w h (+ i 1) (+ contadorQuadras 1) (+ contadorHidrantes 1) (+ contadorRadiosBase 1) 1 arquivo)]))
+           (imprimeQuadras x y w h contadorQuadras arquivo lista)
+           (imprimeHidrantes x y contadorHidrantes arquivo lista)
+           (cond [(equal? (remainder contadorQuadras 2) 0) (+ 1 contadorRadiosBase) (imprimeRadiosBase x y contadorRadiosBase arquivo lista)])
+           (gerarElementos tamanhoCidade (+ x 135) y w h (+ i 1) (+ contadorQuadras 1) (+ contadorHidrantes 1) (+ contadorRadiosBase 1) 1 arquivo lista)]))
 
 
 
-(define (imprimeQuadras x y w h id arquivo)
-    (display (string-append "q " (gerarId "quadra" id) " " (number->string x) " " (number->string y) " " (number->string w) " " (number->string h) "\n") arquivo))
-
-
-
-(define (imprimeHidrantes x y id arquivo)
-    (display (string-append "h " (gerarId "hidrante" id) ".1" " " (number->string (+ x 60)) " " (number->string y) "\n") arquivo)
-    (display (string-append "h " (gerarId "hidrante" id) ".2" " " (number->string (+ x 120)) " " (number->string (+ y 40)) "\n") arquivo)
-    (display (string-append "h " (gerarId "hidrante" id) ".3" " " (number->string (+ x 60)) " " (number->string (+ y 80)) "\n") arquivo)
-    (display (string-append "h " (gerarId "hidrante" id) ".4" " " (number->string x) " " (number->string (+ y 40)) "\n") arquivo)
+(define (imprimeQuadras x y w h id arquivo lista)
+    (display (string-append "q " (gerarId "quadra" id) " " (number->string x) " " (number->string y) " " (number->string w) " " (number->string h) "\n") arquivo)
+    (cond
+        [(equal? lista 1) (set! listaQuadras1 (cons (gerarId "quadra" id) listaQuadras1))]
+        [(equal? lista 2) (set! listaQuadras2 (cons (gerarId "quadra" id) listaQuadras2))]
+        [(equal? lista 3) (set! listaQuadras3 (cons (gerarId "quadra" id) listaQuadras3))]
+    )
 )
 
 
 
-(define(imprimeRadiosBase x y id arquivo)
-    (display (string-append "rb " (gerarId "radioBase" id) " " (number->string (+ x 60)) " " (number->string (+ y 40)) "\n") arquivo))
+(define (imprimeHidrantes x y id arquivo lista)
+    (set! aleatoriedade (random 4))
+    (cond [ (> aleatoriedade 1 )
+        (display (string-append "h " (gerarId "hidrante" id) ".1" " " (number->string (+ x 60)) " " (number->string y) "\n") arquivo)
+        (cond
+            [(equal? lista 1) (set! listaHidrantes1 (cons (string-append (gerarId "hidrante" id) ".1") listaHidrantes1))]
+            [(equal? lista 2) (set! listaHidrantes2 (cons (string-append (gerarId "hidrante" id) ".1") listaHidrantes2))]
+            [(equal? lista 3) (set! listaHidrantes3 (cons (string-append (gerarId "hidrante" id) ".1") listaHidrantes3))]
+        )
+    ]
+    )
+
+    (set! aleatoriedade (random 4))
+    (cond [ (> aleatoriedade 1 )
+        (display (string-append "h " (gerarId "hidrante" id) ".2" " " (number->string (+ x 120)) " " (number->string (+ y 40)) "\n") arquivo)
+        (cond
+            [(equal? lista 1) (set! listaHidrantes1 (cons (string-append (gerarId "hidrante" id) ".2") listaHidrantes1))]
+            [(equal? lista 2) (set! listaHidrantes2 (cons (string-append (gerarId "hidrante" id) ".2") listaHidrantes2))]
+            [(equal? lista 3) (set! listaHidrantes3 (cons (string-append (gerarId "hidrante" id) ".2") listaHidrantes3))]
+        )
+    ]
+    )
+
+    (set! aleatoriedade (random 4))
+    (cond [ (> aleatoriedade 1 )
+        (display (string-append "h " (gerarId "hidrante" id) ".3" " " (number->string (+ x 60)) " " (number->string (+ y 80)) "\n") arquivo)
+        (cond
+            [(equal? lista 1) (set! listaHidrantes1 (cons (string-append (gerarId "hidrante" id) ".3") listaHidrantes1))]
+            [(equal? lista 2) (set! listaHidrantes2 (cons (string-append (gerarId "hidrante" id) ".3") listaHidrantes2))]
+            [(equal? lista 3) (set! listaHidrantes3 (cons (string-append (gerarId "hidrante" id) ".3") listaHidrantes3))]
+        )
+    ]
+    )
+
+    (set! aleatoriedade (random 4))
+    (cond [ (> aleatoriedade 1 )
+        (display (string-append "h " (gerarId "hidrante" id) ".4" " " (number->string x) " " (number->string (+ y 40)) "\n") arquivo)
+        (cond
+            [(equal? lista 1) (set! listaHidrantes1 (cons (string-append (gerarId "hidrante" id) ".4") listaHidrantes1))]
+            [(equal? lista 2) (set! listaHidrantes2 (cons (string-append (gerarId "hidrante" id) ".4") listaHidrantes2))]
+            [(equal? lista 3) (set! listaHidrantes3 (cons (string-append (gerarId "hidrante" id) ".4") listaHidrantes3))]
+        )
+    ]
+    )
+)
 
 
 
-(define(imprimeSemaforos tamanhoCidade x y i contadorSemaforos arquivo)
+(define(imprimeRadiosBase x y id arquivo lista)
+       (set! aleatoriedade (random 4))
+       (cond [ (> aleatoriedade 1 )
+            (display (string-append "rb " (gerarId "radioBase" id) " " (number->string (+ x 60)) " " (number->string (+ y 40)) "\n") arquivo)
+            (cond
+                [(equal? lista 1) (set! listaRB1 (cons (gerarId "radioBase" id) listaRB1))]
+                [(equal? lista 2) (set! listaRB2 (cons (gerarId "radioBase" id) listaRB2))]
+                [(equal? lista 3) (set! listaRB3 (cons (gerarId "radioBase" id) listaRB3))]
+             )
+           ]
+    )
+)
+
+
+
+(define(imprimeSemaforos tamanhoCidade x y i contadorSemaforos arquivo lista)
     (cond
         [(equal? contadorSemaforos (* (- tamanhoCidade 1) (- tamanhoCidade 1)))
-           (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
-        ]
+           (set! aleatoriedade (random 4))
+           (cond [ (> aleatoriedade 1 )
+               (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
+               (cond
+                   [(equal? lista 1) (set! listaSemaforos1 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos1))]
+                   [(equal? lista 2) (set! listaSemaforos2 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos2))]
+                   [(equal? lista 3) (set! listaSemaforos3 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos3))]
+               )
+               ]
+           )
+         ]
 
         [(equal? i (- tamanhoCidade 2))
-           (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
-           (imprimeSemaforos tamanhoCidade 152.5 (+ y 95) 0 (+ contadorSemaforos 1) arquivo)
+           (set! aleatoriedade (random 4))
+           (cond [ (> aleatoriedade 1 )
+               (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
+               (cond
+                   [(equal? lista 1) (set! listaSemaforos1 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos1))]
+                   [(equal? lista 2) (set! listaSemaforos2 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos2))]
+                   [(equal? lista 3) (set! listaSemaforos3 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos3))]
+               )
+               ]
+           )
+           (imprimeSemaforos tamanhoCidade 152.5 (+ y 95) 0 (+ contadorSemaforos 1) arquivo lista)
         ]
 
         [#t
-           (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
-           (imprimeSemaforos tamanhoCidade (+ x 135) y (+ i 1) (+ contadorSemaforos 1) arquivo)
+           (set! aleatoriedade (random 4))
+           (cond [ (> aleatoriedade 1 )
+               (display (string-append "s " (gerarId "semaforo" contadorSemaforos) " " (number->string x) " " (number->string y) "\n") arquivo)
+               (cond
+                   [(equal? lista 1) (set! listaSemaforos1 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos1))]
+                   [(equal? lista 2) (set! listaSemaforos2 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos2))]
+                   [(equal? lista 3) (set! listaSemaforos3 (cons (gerarId "semaforo" contadorSemaforos) listaSemaforos3))]
+               )
+               ]
+           )
+           (imprimeSemaforos tamanhoCidade (+ x 135) y (+ i 1) (+ contadorSemaforos 1) arquivo lista)
         ]
     )
 )
@@ -136,43 +243,12 @@
 
 
 
-;; Gera lista dos elementos (exceto hidrante)
-(define (gerarLista elemento numId numMax lista)
-  (cond
-    [(equal? numId numMax) lista]
-    [#t (define listaAux (cons (gerarId elemento numId) lista)) (gerarLista elemento (+ numId 1) numMax listaAux)]))
- 
-;; Gera lista dos hidrantes
-(define (gerarListaHidrante numQuadra numHidrante numMax lista)
-  (cond
-    [(equal? numQuadra numMax) lista]
-    [(equal? numHidrante 4) (define listaAux (cons (string-append (gerarId "hidrante" numQuadra) "." (number->string numHidrante)) lista)) (gerarListaHidrante (+ numQuadra 1) 1 numMax listaAux)]
-    [#t (define listaAux (cons (string-append (gerarId "hidrante" numQuadra) "." (number->string numHidrante)) lista)) (gerarListaHidrante numQuadra (+ numHidrante 1) numMax listaAux)]))
-
-
-
 ;; Bloco de codigo piloto
-(gerarElementos 5 25 25 120 80 0 0 0 0 0 geo)
-(gerarElementos 10 25 25 120 80 0 0 0 0 0 geo2)
-(gerarElementos 15 25 25 120 80 0 0 0 0 0 geo3)
+(gerarElementos 5 25 25 120 80 0 0 0 0 0 geo 1)
+(gerarElementos 10 25 25 120 80 0 0 0 0 0 geo2 2)
+(gerarElementos 15 25 25 120 80 0 0 0 0 0 geo3 3)
 
 (testesFormas geo geo2 geo3 qry qry2 qry3)
-
-(define listaQuadrasMenor (gerarLista "quadra" 0 25 (list null)))
-(define listaQuadrasMedio (gerarLista "quadra" 0 100 (list null)))
-(define listaQuadrasMaior (gerarLista "quadra" 0 225 (list null)))
- 
-(define listaSemaforosMenor (gerarLista "semaforo" 0 16 (list null)))
-(define listaSemaforosMedio (gerarLista "semaforo" 0 81 (list null)))
-(define listaSemaforosMaior (gerarLista "semaforo" 0 196 (list null)))
- 
-(define listaRadioBasesMenor (gerarLista "radioBase" 0 13 (list null)))
-(define listaRadioBasesMedio (gerarLista "radioBase" 0 51 (list null)))
-(define listaRadioBasesMaior (gerarLista "radioBase" 0 113 (list null)))
- 
-(define listaHidranteMenor (gerarListaHidrante 0 1 25 (list null)))
-(define listaHidranteMedio (gerarListaHidrante 0 1 100 (list null)))
-(define listaHidranteMaior (gerarListaHidrante 0 1 225 (list null)))
 
 (close-output-port geo)
 (close-output-port geo2)
@@ -180,6 +256,3 @@
 (close-output-port qry)
 (close-output-port qry2)
 (close-output-port qry3)
-
-
-           
