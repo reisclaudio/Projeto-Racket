@@ -1,0 +1,4 @@
+dq L1 semaforo124 308.000000
+Equipamento Urbano: semaforo124 x = 1772.500000 y = 872.500000
+Quadras removidas: quadra132 quadra133 quadra147 quadra148 
+

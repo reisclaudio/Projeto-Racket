@@ -1,0 +1,4 @@
+dq L1 radioBase96 189.000000
+Equipamento Urbano: radioBase96 x = 895.000000 y = 920.000000
+Quadras removidas: quadra96 
+

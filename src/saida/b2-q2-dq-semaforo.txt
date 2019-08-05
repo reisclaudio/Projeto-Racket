@@ -1,0 +1,4 @@
+dq L2 semaforo76 113.000000
+Equipamento Urbano: semaforo76 x = 692.500000 y = 872.500000
+Quadras removidas: 
+

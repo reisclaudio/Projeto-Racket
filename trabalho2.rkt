@@ -26,10 +26,9 @@
 (define qry2CBQBordas (open-output-file "casosDeTeste/q2-testes/q2-cbqbordas.qry"))
 (define qry2CBQCentro (open-output-file "casosDeTeste/q2-testes/q2-cbqcentro.qry"))
 (define qry2CBQ (open-output-file "casosDeTeste/q2-testes/q2-cbq.qry"))
-(define qry2DQ1 (open-output-file "casosDeTeste/q2-testes/q2-dq1.qry"))
-(define qry2DQ2 (open-output-file "casosDeTeste/q2-testes/q2-dq2.qry"))
-(define qry2DQ3 (open-output-file "casosDeTeste/q2-testes/q2-dq3.qry"))
-(define qry2DQ4 (open-output-file "casosDeTeste/q2-testes/q2-dq4.qry"))
+(define qry2DQ1 (open-output-file "casosDeTeste/q2-testes/q2-dq-semaforo.qry"))
+(define qry2DQ2 (open-output-file "casosDeTeste/q2-testes/q2-dq-hidrante.qry"))
+(define qry2DQ3 (open-output-file "casosDeTeste/q2-testes/q2-dq-rb.qry"))
 (define qry3 (open-output-file "casosDeTeste/q3-testes/q3.qry"))
 (define qry3DEL (open-output-file "casosDeTeste/q3-testes/q3-del.qry"))
 (define qry3TransD (open-output-file "casosDeTeste/q3-testes/q3-trnsDir.qry"))
@@ -39,12 +38,10 @@
 (define qry3CBQBordas (open-output-file "casosDeTeste/q3-testes/q3-cbqbordas.qry"))
 (define qry3CBQCentro (open-output-file "casosDeTeste/q3-testes/q3-cbqcentro.qry"))
 (define qry3CBQ (open-output-file "casosDeTeste/q3-testes/q3-cbq.qry"))
-(define qry3DQ1 (open-output-file "casosDeTeste/q3-testes/q3-dq1.qry"))
-(define qry3DQ2 (open-output-file "casosDeTeste/q3-testes/q3-dq2.qry"))
-(define qry3DQ3 (open-output-file "casosDeTeste/q3-testes/q3-dq3.qry"))
-(define qry3DQ4 (open-output-file "casosDeTeste/q3-testes/q3-dq4.qry"))
-(define qry3DQ5 (open-output-file "casosDeTeste/q3-testes/q3-dq5.qry"))
-(define qry3DQ6 (open-output-file "casosDeTeste/q3-testes/q3-dq6.qry"))
+(define qry3DQ1 (open-output-file "casosDeTeste/q3-testes/q3-dq-semaforo.qry"))
+(define qry3DQ2 (open-output-file "casosDeTeste/q3-testes/q3-dq-hidrante.qry"))
+(define qry3DQ3 (open-output-file "casosDeTeste/q3-testes/q3-dq-rb.qry"))
+(define qry3DQ4 (open-output-file "casosDeTeste/q3-testes/q3-dq-nenhum.qry"))
 
 
 
@@ -429,6 +426,25 @@
 
 
 
+(define (geraDQ)
+
+  ;; Complexidade 1
+  (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaHidrantes1 (random (-(length listaHidrantes1)1))0) " " (number->string(random 100 350))) qryDQ)
+
+  ;; Complexidade 2
+  (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaSemaforos2 (random (-(length listaSemaforos2)1))0) " " (number->string(random 100 450))) qry2DQ1)
+  (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaHidrantes2 (random (-(length listaHidrantes2)1))0) " " (number->string(random 100 450))) qry2DQ2)
+  (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaRB2 (random (-(length listaRB2)1))0) " " (number->string(random 100 450))) qry2DQ3)
+
+  ;; Complexidade 3
+  (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaSemaforos3 (random (-(length listaSemaforos3)1))0) " " (number->string(random 100 650))) qry3DQ1)
+  (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaHidrantes3 (random (-(length listaHidrantes3)1))0) " " (number->string(random 100 650))) qry3DQ2)
+  (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaRB3 (random (-(length listaRB3)1))0) " " (number->string(random 100 650))) qry3DQ3)
+  (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaRB3 (random (-(length listaRB3)1))0) " " "1") qry3DQ4)
+)
+
+
+
 
 ;; Bloco de codigo piloto
 (gerarComandos geo 1 cores)
@@ -454,6 +470,8 @@
 (geraTrns qry3TransE 3 "e")
 (geraTrns qry3TransC 3 "c")
 (geraTrns qry3TransB 3 "b")
+
+(geraDQ)
 
 ;; Fecha os arquivos
 (close-output-port geo)
@@ -490,13 +508,10 @@
 (close-output-port qry2DQ1)
 (close-output-port qry2DQ2)
 (close-output-port qry2DQ3)
-(close-output-port qry2DQ4)
 (close-output-port qry3DQ1)
 (close-output-port qry3DQ2)
 (close-output-port qry3DQ3)
 (close-output-port qry3DQ4)
-(close-output-port qry3DQ5)
-(close-output-port qry3DQ6)
 
 
 

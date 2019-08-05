@@ -1,0 +1,4 @@
+dq L2 radioBase40 1.000000
+Equipamento Urbano: radioBase40 x = 1435.000000 y = 255.000000
+Quadras removidas: 
+

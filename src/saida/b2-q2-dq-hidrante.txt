@@ -1,0 +1,4 @@
+dq L2 hidrante95.4 339.000000
+Equipamento Urbano: hidrante95.4 x = 700.000000 y = 920.000000
+Quadras removidas: quadra74 quadra75 quadra83 quadra84 quadra85 quadra86 quadra93 quadra94 quadra95 quadra96 
+

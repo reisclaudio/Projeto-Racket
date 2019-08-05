@@ -1,0 +1,4 @@
+dq L2 radioBase196 488.000000
+Equipamento Urbano: radioBase196 x = 220.000000 y = 1300.000000
+Quadras removidas: quadra135 quadra136 quadra137 quadra150 quadra151 quadra152 quadra153 quadra165 quadra166 quadra167 quadra168 quadra180 quadra181 quadra182 quadra183 quadra184 quadra195 quadra196 quadra197 quadra198 quadra199 quadra210 quadra211 quadra212 quadra213 quadra214 
+

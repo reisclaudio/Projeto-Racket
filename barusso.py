@@ -53,6 +53,8 @@ os.system("cd src && ./siguel -e ../casosDeTeste -f b1.geo -q /q1-testes/q1-cbq.
 os.system("cd src && ./siguel -e ../casosDeTeste -f b1.geo -q /q1-testes/q1-cbqbordas.qry -o saida")
 os.system("cd src && ./siguel -e ../casosDeTeste -f b1.geo -q /q1-testes/q1-cbqcentro.qry -o saida")
 
+os.system("cd src && ./siguel -e ../casosDeTeste -f b1.geo -q /q1-testes/q1-dq.qry -o saida")
+
 time.sleep(2)
 
 print("\nExecutando nivel 2")
@@ -70,6 +72,10 @@ os.system("cd src && ./siguel -e ../casosDeTeste -f b2.geo -q /q2-testes/q2-cbq.
 os.system("cd src && ./siguel -e ../casosDeTeste -f b2.geo -q /q2-testes/q2-cbqbordas.qry -o saida")
 os.system("cd src && ./siguel -e ../casosDeTeste -f b2.geo -q /q2-testes/q2-cbqcentro.qry -o saida")
 
+os.system("cd src && ./siguel -e ../casosDeTeste -f b2.geo -q /q2-testes/q2-dq-semaforo.qry -o saida")
+os.system("cd src && ./siguel -e ../casosDeTeste -f b2.geo -q /q2-testes/q2-dq-hidrante.qry -o saida")
+os.system("cd src && ./siguel -e ../casosDeTeste -f b2.geo -q /q2-testes/q2-dq-rb.qry -o saida")
+
 time.sleep(2)
 
 print("\nExecutando nivel 3")
@@ -86,5 +92,11 @@ os.system("cd src && ./siguel -e ../casosDeTeste -f b3.geo -q /q3-testes/q3-trns
 os.system("cd src && ./siguel -e ../casosDeTeste -f b3.geo -q /q3-testes/q3-cbq.qry -o saida")
 os.system("cd src && ./siguel -e ../casosDeTeste -f b3.geo -q /q3-testes/q3-cbqbordas.qry -o saida")
 os.system("cd src && ./siguel -e ../casosDeTeste -f b3.geo -q /q3-testes/q3-cbqcentro.qry -o saida")
+
+os.system("cd src && ./siguel -e ../casosDeTeste -f b3.geo -q /q3-testes/q3-dq-semaforo.qry -o saida")
+os.system("cd src && ./siguel -e ../casosDeTeste -f b3.geo -q /q3-testes/q3-dq-hidrante.qry -o saida")
+os.system("cd src && ./siguel -e ../casosDeTeste -f b3.geo -q /q3-testes/q3-dq-rb.qry -o saida")
+os.system("cd src && ./siguel -e ../casosDeTeste -f b3.geo -q /q3-testes/q3-dq-nenhum.qry -o saida")
+
 
 time.sleep(2)
