@@ -5,6 +5,7 @@
 (define geo2 (open-output-file "casosDeTeste/b2.geo"))
 (define geo3 (open-output-file "casosDeTeste/b3.geo"))
 
+;; Abre os arquivos .qry
 (define qry (open-output-file "casosDeTeste/q1-testes/q1.qry"))
 (define qryDEL (open-output-file "casosDeTeste/q1-testes/q1-del.qry"))
 (define qryTransD (open-output-file "casosDeTeste/q1-testes/q1-trnsDir.qry"))
@@ -340,8 +341,59 @@
          (display (string-append "del" " " (percorreLista listaRB3 indice 0) "\n") qry3DEL)
          (display (string-append "crd?" " " (percorreLista listaRB3 indice 0) "\n") qry3DEL)]))
 
-
-
+;; Consulta trns
+(define (geraTrns arquivo tamanho tipo)
+  (cond
+    [(equal? tamanho 1)
+     (cond
+       [(equal? tipo "d")
+        (display (string-append "trns " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 1 100)) " 0\n") arquivo)
+       ]
+       [(equal? tipo "e")
+        (display (string-append "trns " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random -100 -1)) " 0\n") arquivo)
+       ]
+       [(equal? tipo "c")
+        (display (string-append "trns " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 660)) " 0 " (number->string (random -100 -1)) "\n") arquivo)
+       ]
+       [(equal? tipo "b")
+        (display (string-append "trns " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 660)) " " (number->string (random 660)) " 0 " (number->string (random 1 100)) "\n") arquivo)
+       ]
+     )
+    ]
+    [(equal? tamanho 2)
+     (cond
+       [(equal? tipo "d")
+        (display (string-append "trns " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1 100)) " 0\n") arquivo)
+       ]
+       [(equal? tipo "e")
+        (display (string-append "trns " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random -100 -1)) " 0\n") arquivo)
+       ]
+       [(equal? tipo "c")
+        (display (string-append "trns " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1335)) " 0 " (number->string (random -100 -1)) "\n") arquivo)
+       ]
+       [(equal? tipo "b")
+        (display (string-append "trns " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1335)) " " (number->string (random 1335)) " 0 " (number->string (random 1 100)) "\n") arquivo)
+       ]
+     )
+    ]
+    [(equal? tamanho 3)
+     (cond
+       [(equal? tipo "d")
+        (display (string-append "trns " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 1 100)) " 0\n") arquivo)
+       ]
+       [(equal? tipo "e")
+        (display (string-append "trns " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random -100 -1)) " 0\n") arquivo)
+       ]
+       [(equal? tipo "c")
+        (display (string-append "trns " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 2010)) " 0 " (number->string (random -100 -1)) "\n") arquivo)
+       ]
+       [(equal? tipo "b")
+        (display (string-append "trns " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 2010)) " " (number->string (random 2010)) " 0 " (number->string (random 1 100)) "\n") arquivo)
+       ]
+     )
+    ]
+   )
+)
 
 
 
@@ -358,7 +410,20 @@
 (geraDEL 1)
 (geraDEL 2)
 (geraDEL 3)
+(geraTrns qryTransD 1 "d")
+(geraTrns qryTransE 1 "e")
+(geraTrns qryTransC 1 "c")
+(geraTrns qryTransB 1 "b")
+(geraTrns qry2TransD 2 "d")
+(geraTrns qry2TransE 2 "e")
+(geraTrns qry2TransC 2 "c")
+(geraTrns qry2TransB 2 "b")
+(geraTrns qry3TransD 3 "d")
+(geraTrns qry3TransE 3 "e")
+(geraTrns qry3TransC 3 "c")
+(geraTrns qry3TransB 3 "b")
 
+;; Fecha os arquivos
 (close-output-port geo)
 (close-output-port geo2)
 (close-output-port geo3)
