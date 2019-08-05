@@ -1,4 +1,5 @@
-#lang racket
+#! /usr/bin/env racket
+#lang racket/base
 
 ;; Abre o arquivo .geo
 (define geo (open-output-file "casosDeTeste/b1.geo"))
@@ -237,7 +238,7 @@
     (display (string-append "i? 1 " (number->string t1) " " (number->string t2) "\n") arquivoQ1)
     (display (string-append "i? 2 " (number->string t3) " " (number->string t4) "\n") arquivoQ1)
     (display "d? 1 2\n" arquivoQ1)
-    (display "bb evandroforte\n" arquivoQ1)
+    (display "bb suf midnightblue\n" arquivoQ1)
 
     (define x3 (random 1335))
     (define y3 (random 935))
@@ -255,7 +256,7 @@
     (display (string-append "i? 1 " (number->string t5) " " (number->string t6) "\n") arquivoQ2)
     (display (string-append "i? 2 " (number->string t7) " " (number->string t8) "\n") arquivoQ2)
     (display "d? 1 2\n" arquivoQ2)
-    (display "bb evandroforte\n" arquivoQ2)
+    (display "bb suf midnightblue\n" arquivoQ2)
 
     (define x5 (random 2010))
     (define y5 (random 1410))
@@ -273,7 +274,7 @@
     (display (string-append "i? 1 " (number->string t9) " " (number->string t10) "\n") arquivoQ3)
     (display (string-append "i? 2 " (number->string t11) " " (number->string t12) "\n") arquivoQ3)
     (display "d? 1 2\n" arquivoQ3)
-    (display "bb kkkcomputero indigo\n" arquivoQ3)
+    (display "bb suf indigo\n" arquivoQ3)
 )
 
 ;; Função que percorre a lista

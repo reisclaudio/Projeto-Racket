@@ -1,0 +1,15 @@
+trns 607.000000 16.000000 83.000000 323.000000 -92.000000 0.000000
+hidrante4.1: 
+ Posicao anterior: (625.000000, 25.000000) 
+ Posicao atualizada: (533.000000, 25.000000)
+hidrante9.2: 
+ Posicao anterior: (685.000000, 160.000000) 
+ Posicao atualizada: (593.000000, 160.000000)
+hidrante14.3: 
+ Posicao anterior: (625.000000, 295.000000) 
+ Posicao atualizada: (533.000000, 295.000000)
+radioBase4: 
+ Posicao anterior: (625.000000, 65.000000) 
+ Posicao atualizada: (533.000000, 65.000000)
+
+

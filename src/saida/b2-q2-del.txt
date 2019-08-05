@@ -1,0 +1,36 @@
+crd? quadra43
+Quadra x = 430.000000 y = 405.000000 w = 120.000000 h = 80.000000
+
+del quadra43
+Quadra x = 430.000000 y = 405.000000 w = 120.000000 h = 80.000000
+
+crd? quadra43
+Elemento nao encontrado!
+
+crd? hidrante84.4
+Hidrante x = 565.000000 y = 825.000000
+
+del hidrante84.4
+Hidrante x = 565.000000 y = 825.000000
+
+crd? hidrante84.4
+Elemento nao encontrado!
+
+crd? semaforo34
+Semaforo x = 1097.500000 y = 397.500000
+
+del semaforo34
+Semaforo x = 1097.500000 y = 397.500000
+
+crd? semaforo34
+Elemento nao encontrado!
+
+crd? radioBase36
+Radio base x = 895.000000 y = 350.000000
+
+del radioBase36
+Radio base x = 895.000000 y = 350.000000
+
+crd? radioBase36
+Elemento nao encontrado!
+
