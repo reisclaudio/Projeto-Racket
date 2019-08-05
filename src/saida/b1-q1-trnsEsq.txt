@@ -1,3 +1,27 @@
-trns 260.000000 565.000000 86.000000 252.000000 -83.000000 0.000000
+trns 344.000000 110.000000 110.000000 210.000000 -4.000000 0.000000
+hidrante7.1: 
+ Posicao anterior: (355.000000, 120.000000) 
+ Posicao atualizada: (351.000000, 120.000000)
+hidrante7.3: 
+ Posicao anterior: (355.000000, 200.000000) 
+ Posicao atualizada: (351.000000, 200.000000)
+hidrante8.4: 
+ Posicao anterior: (430.000000, 160.000000) 
+ Posicao atualizada: (426.000000, 160.000000)
+hidrante12.1: 
+ Posicao anterior: (355.000000, 215.000000) 
+ Posicao atualizada: (351.000000, 215.000000)
+hidrante13.4: 
+ Posicao anterior: (430.000000, 255.000000) 
+ Posicao atualizada: (426.000000, 255.000000)
+hidrante17.1: 
+ Posicao anterior: (355.000000, 310.000000) 
+ Posicao atualizada: (351.000000, 310.000000)
+semaforo10: 
+ Posicao anterior: (422.500000, 302.500000) 
+ Posicao atualizada: (418.500000, 302.500000)
+radioBase12: 
+ Posicao anterior: (355.000000, 255.000000) 
+ Posicao atualizada: (351.000000, 255.000000)
 
 

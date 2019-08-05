@@ -1,3 +1,39 @@
-trns 212.000000 624.000000 594.000000 643.000000 0.000000 20.000000
+trns 557.000000 109.000000 650.000000 340.000000 0.000000 45.000000
+quadra9: 
+ Posicao anterior: (565.000000, 120.000000) 
+ Posicao atualizada: (565.000000, 165.000000)
+quadra14: 
+ Posicao anterior: (565.000000, 215.000000) 
+ Posicao atualizada: (565.000000, 260.000000)
+quadra19: 
+ Posicao anterior: (565.000000, 310.000000) 
+ Posicao atualizada: (565.000000, 355.000000)
+hidrante9.1: 
+ Posicao anterior: (625.000000, 120.000000) 
+ Posicao atualizada: (625.000000, 165.000000)
+hidrante9.4: 
+ Posicao anterior: (565.000000, 160.000000) 
+ Posicao atualizada: (565.000000, 205.000000)
+hidrante14.1: 
+ Posicao anterior: (625.000000, 215.000000) 
+ Posicao atualizada: (625.000000, 260.000000)
+hidrante14.2: 
+ Posicao anterior: (685.000000, 255.000000) 
+ Posicao atualizada: (685.000000, 300.000000)
+hidrante19.2: 
+ Posicao anterior: (685.000000, 350.000000) 
+ Posicao atualizada: (685.000000, 395.000000)
+hidrante19.4: 
+ Posicao anterior: (565.000000, 350.000000) 
+ Posicao atualizada: (565.000000, 395.000000)
+hidrante24.4: 
+ Posicao anterior: (565.000000, 445.000000) 
+ Posicao atualizada: (565.000000, 490.000000)
+semaforo7: 
+ Posicao anterior: (557.500000, 207.500000) 
+ Posicao atualizada: (557.500000, 252.500000)
+semaforo15: 
+ Posicao anterior: (557.500000, 397.500000) 
+ Posicao atualizada: (557.500000, 442.500000)
 
 
