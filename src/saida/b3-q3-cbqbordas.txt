@@ -1,0 +1,3 @@
+cbq 1091.000000 52.000000 139.000000 purple
+Quadras com bordas alteradas: quadra7 
+

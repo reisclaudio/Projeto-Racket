@@ -1,168 +1,84 @@
-trns 753.000000 255.000000 347.000000 660.000000 -72.000000 0.000000
-quadra36: 
- Posicao anterior: (835.000000, 310.000000) 
- Posicao atualizada: (763.000000, 310.000000)
-quadra37: 
- Posicao anterior: (970.000000, 310.000000) 
- Posicao atualizada: (898.000000, 310.000000)
-quadra46: 
- Posicao anterior: (835.000000, 405.000000) 
- Posicao atualizada: (763.000000, 405.000000)
-quadra47: 
- Posicao anterior: (970.000000, 405.000000) 
- Posicao atualizada: (898.000000, 405.000000)
-quadra56: 
- Posicao anterior: (835.000000, 500.000000) 
- Posicao atualizada: (763.000000, 500.000000)
-quadra57: 
- Posicao anterior: (970.000000, 500.000000) 
- Posicao atualizada: (898.000000, 500.000000)
-quadra66: 
- Posicao anterior: (835.000000, 595.000000) 
- Posicao atualizada: (763.000000, 595.000000)
-quadra67: 
- Posicao anterior: (970.000000, 595.000000) 
- Posicao atualizada: (898.000000, 595.000000)
-quadra76: 
- Posicao anterior: (835.000000, 690.000000) 
- Posicao atualizada: (763.000000, 690.000000)
-quadra77: 
- Posicao anterior: (970.000000, 690.000000) 
- Posicao atualizada: (898.000000, 690.000000)
+trns 774.000000 731.000000 1324.000000 514.000000 -65.000000 0.000000
 quadra86: 
  Posicao anterior: (835.000000, 785.000000) 
- Posicao atualizada: (763.000000, 785.000000)
+ Posicao atualizada: (770.000000, 785.000000)
 quadra87: 
  Posicao anterior: (970.000000, 785.000000) 
- Posicao atualizada: (898.000000, 785.000000)
-hidrante26.3: 
- Posicao anterior: (895.000000, 295.000000) 
- Posicao atualizada: (823.000000, 295.000000)
-hidrante35.1: 
- Posicao anterior: (760.000000, 310.000000) 
- Posicao atualizada: (688.000000, 310.000000)
-hidrante35.2: 
- Posicao anterior: (820.000000, 350.000000) 
- Posicao atualizada: (748.000000, 350.000000)
-hidrante35.3: 
- Posicao anterior: (760.000000, 390.000000) 
- Posicao atualizada: (688.000000, 390.000000)
-hidrante36.2: 
- Posicao anterior: (955.000000, 350.000000) 
- Posicao atualizada: (883.000000, 350.000000)
-hidrante36.3: 
- Posicao anterior: (895.000000, 390.000000) 
- Posicao atualizada: (823.000000, 390.000000)
-hidrante37.1: 
- Posicao anterior: (1030.000000, 310.000000) 
- Posicao atualizada: (958.000000, 310.000000)
-hidrante37.2: 
- Posicao anterior: (1090.000000, 350.000000) 
- Posicao atualizada: (1018.000000, 350.000000)
-hidrante37.3: 
- Posicao anterior: (1030.000000, 390.000000) 
- Posicao atualizada: (958.000000, 390.000000)
-hidrante37.4: 
- Posicao anterior: (970.000000, 350.000000) 
- Posicao atualizada: (898.000000, 350.000000)
-hidrante46.1: 
- Posicao anterior: (895.000000, 405.000000) 
- Posicao atualizada: (823.000000, 405.000000)
-hidrante46.2: 
- Posicao anterior: (955.000000, 445.000000) 
- Posicao atualizada: (883.000000, 445.000000)
-hidrante47.1: 
- Posicao anterior: (1030.000000, 405.000000) 
- Posicao atualizada: (958.000000, 405.000000)
-hidrante47.2: 
- Posicao anterior: (1090.000000, 445.000000) 
- Posicao atualizada: (1018.000000, 445.000000)
-hidrante47.4: 
- Posicao anterior: (970.000000, 445.000000) 
- Posicao atualizada: (898.000000, 445.000000)
-hidrante55.1: 
- Posicao anterior: (760.000000, 500.000000) 
- Posicao atualizada: (688.000000, 500.000000)
-hidrante55.3: 
- Posicao anterior: (760.000000, 580.000000) 
- Posicao atualizada: (688.000000, 580.000000)
-hidrante56.2: 
- Posicao anterior: (955.000000, 540.000000) 
- Posicao atualizada: (883.000000, 540.000000)
-hidrante65.1: 
- Posicao anterior: (760.000000, 595.000000) 
- Posicao atualizada: (688.000000, 595.000000)
-hidrante65.3: 
- Posicao anterior: (760.000000, 675.000000) 
- Posicao atualizada: (688.000000, 675.000000)
-hidrante66.2: 
- Posicao anterior: (955.000000, 635.000000) 
- Posicao atualizada: (883.000000, 635.000000)
-hidrante66.3: 
- Posicao anterior: (895.000000, 675.000000) 
- Posicao atualizada: (823.000000, 675.000000)
-hidrante67.3: 
- Posicao anterior: (1030.000000, 675.000000) 
- Posicao atualizada: (958.000000, 675.000000)
-hidrante75.2: 
- Posicao anterior: (820.000000, 730.000000) 
- Posicao atualizada: (748.000000, 730.000000)
-hidrante76.2: 
- Posicao anterior: (955.000000, 730.000000) 
- Posicao atualizada: (883.000000, 730.000000)
-hidrante76.4: 
- Posicao anterior: (835.000000, 730.000000) 
- Posicao atualizada: (763.000000, 730.000000)
-hidrante77.2: 
- Posicao anterior: (1090.000000, 730.000000) 
- Posicao atualizada: (1018.000000, 730.000000)
+ Posicao atualizada: (905.000000, 785.000000)
+quadra88: 
+ Posicao anterior: (1105.000000, 785.000000) 
+ Posicao atualizada: (1040.000000, 785.000000)
+quadra89: 
+ Posicao anterior: (1240.000000, 785.000000) 
+ Posicao atualizada: (1175.000000, 785.000000)
+quadra96: 
+ Posicao anterior: (835.000000, 880.000000) 
+ Posicao atualizada: (770.000000, 880.000000)
+quadra97: 
+ Posicao anterior: (970.000000, 880.000000) 
+ Posicao atualizada: (905.000000, 880.000000)
+quadra98: 
+ Posicao anterior: (1105.000000, 880.000000) 
+ Posicao atualizada: (1040.000000, 880.000000)
+quadra99: 
+ Posicao anterior: (1240.000000, 880.000000) 
+ Posicao atualizada: (1175.000000, 880.000000)
 hidrante77.3: 
  Posicao anterior: (1030.000000, 770.000000) 
- Posicao atualizada: (958.000000, 770.000000)
-hidrante85.1: 
- Posicao anterior: (760.000000, 785.000000) 
- Posicao atualizada: (688.000000, 785.000000)
-hidrante85.3: 
- Posicao anterior: (760.000000, 865.000000) 
- Posicao atualizada: (688.000000, 865.000000)
-hidrante87.2: 
- Posicao anterior: (1090.000000, 825.000000) 
- Posicao atualizada: (1018.000000, 825.000000)
-hidrante95.1: 
- Posicao anterior: (760.000000, 880.000000) 
- Posicao atualizada: (688.000000, 880.000000)
-hidrante97.1: 
- Posicao anterior: (1030.000000, 880.000000) 
- Posicao atualizada: (958.000000, 880.000000)
-semaforo24: 
- Posicao anterior: (962.500000, 302.500000) 
- Posicao atualizada: (890.500000, 302.500000)
-semaforo25: 
- Posicao anterior: (1097.500000, 302.500000) 
- Posicao atualizada: (1025.500000, 302.500000)
-semaforo34: 
- Posicao anterior: (1097.500000, 397.500000) 
- Posicao atualizada: (1025.500000, 397.500000)
-semaforo41: 
- Posicao anterior: (827.500000, 492.500000) 
- Posicao atualizada: (755.500000, 492.500000)
-semaforo42: 
- Posicao anterior: (962.500000, 492.500000) 
- Posicao atualizada: (890.500000, 492.500000)
-semaforo52: 
- Posicao anterior: (1097.500000, 587.500000) 
- Posicao atualizada: (1025.500000, 587.500000)
-semaforo60: 
- Posicao anterior: (962.500000, 682.500000) 
- Posicao atualizada: (890.500000, 682.500000)
+ Posicao atualizada: (965.000000, 770.000000)
+hidrante78.3: 
+ Posicao anterior: (1165.000000, 770.000000) 
+ Posicao atualizada: (1100.000000, 770.000000)
+hidrante86.1: 
+ Posicao anterior: (895.000000, 785.000000) 
+ Posicao atualizada: (830.000000, 785.000000)
+hidrante87.4: 
+ Posicao anterior: (970.000000, 825.000000) 
+ Posicao atualizada: (905.000000, 825.000000)
+hidrante88.1: 
+ Posicao anterior: (1165.000000, 785.000000) 
+ Posicao atualizada: (1100.000000, 785.000000)
+hidrante88.2: 
+ Posicao anterior: (1225.000000, 825.000000) 
+ Posicao atualizada: (1160.000000, 825.000000)
+hidrante88.4: 
+ Posicao anterior: (1105.000000, 825.000000) 
+ Posicao atualizada: (1040.000000, 825.000000)
+hidrante89.4: 
+ Posicao anterior: (1240.000000, 825.000000) 
+ Posicao atualizada: (1175.000000, 825.000000)
+hidrante95.2: 
+ Posicao anterior: (820.000000, 920.000000) 
+ Posicao atualizada: (755.000000, 920.000000)
+hidrante96.2: 
+ Posicao anterior: (955.000000, 920.000000) 
+ Posicao atualizada: (890.000000, 920.000000)
+hidrante97.2: 
+ Posicao anterior: (1090.000000, 920.000000) 
+ Posicao atualizada: (1025.000000, 920.000000)
+hidrante97.4: 
+ Posicao anterior: (970.000000, 920.000000) 
+ Posicao atualizada: (905.000000, 920.000000)
+hidrante98.1: 
+ Posicao anterior: (1165.000000, 880.000000) 
+ Posicao atualizada: (1100.000000, 880.000000)
+hidrante98.2: 
+ Posicao anterior: (1225.000000, 920.000000) 
+ Posicao atualizada: (1160.000000, 920.000000)
+hidrante99.2: 
+ Posicao anterior: (1360.000000, 920.000000) 
+ Posicao atualizada: (1295.000000, 920.000000)
+hidrante99.4: 
+ Posicao anterior: (1240.000000, 920.000000) 
+ Posicao atualizada: (1175.000000, 920.000000)
 semaforo69: 
  Posicao anterior: (962.500000, 777.500000) 
- Posicao atualizada: (890.500000, 777.500000)
-semaforo70: 
- Posicao anterior: (1097.500000, 777.500000) 
- Posicao atualizada: (1025.500000, 777.500000)
-radioBase86: 
- Posicao anterior: (895.000000, 825.000000) 
- Posicao atualizada: (823.000000, 825.000000)
+ Posicao atualizada: (897.500000, 777.500000)
+semaforo80: 
+ Posicao anterior: (1232.500000, 872.500000) 
+ Posicao atualizada: (1167.500000, 872.500000)
+radioBase99: 
+ Posicao anterior: (1300.000000, 920.000000) 
+ Posicao atualizada: (1235.000000, 920.000000)
 
 

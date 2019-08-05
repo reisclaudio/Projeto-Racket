@@ -1,0 +1,3 @@
+cbq 408.000000 555.000000 63.000000 yellow
+Quadras com bordas alteradas: 
+

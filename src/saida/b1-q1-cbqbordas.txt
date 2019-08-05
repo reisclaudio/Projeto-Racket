@@ -1,0 +1,3 @@
+cbq 354.000000 40.000000 178.000000 yellow
+Quadras com bordas alteradas: quadra2 quadra7 
+

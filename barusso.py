@@ -9,7 +9,9 @@ os.system("chmod a+x trabalho2.rkt")
 time.sleep(1)
 
 print("Apagando testes remanescentes do ultimo uso")
+
 os.system("rm -rf casosDeTeste/*.geo")
+
 os.system("rm casosDeTeste/q1-testes/*.qry")
 
 os.system("rm casosDeTeste/q2-testes/*.qry")

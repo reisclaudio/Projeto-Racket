@@ -1,69 +1,45 @@
-trns 289.000000 219.000000 292.000000 627.000000 2.000000 0.000000
-quadra17: 
- Posicao anterior: (295.000000, 310.000000) 
- Posicao atualizada: (297.000000, 310.000000)
-quadra18: 
- Posicao anterior: (430.000000, 310.000000) 
- Posicao atualizada: (432.000000, 310.000000)
-quadra22: 
- Posicao anterior: (295.000000, 405.000000) 
- Posicao atualizada: (297.000000, 405.000000)
-quadra23: 
- Posicao anterior: (430.000000, 405.000000) 
- Posicao atualizada: (432.000000, 405.000000)
-hidrante12.2: 
- Posicao anterior: (415.000000, 255.000000) 
- Posicao atualizada: (417.000000, 255.000000)
-hidrante12.3: 
- Posicao anterior: (355.000000, 295.000000) 
- Posicao atualizada: (357.000000, 295.000000)
-hidrante12.4: 
- Posicao anterior: (295.000000, 255.000000) 
- Posicao atualizada: (297.000000, 255.000000)
-hidrante13.4: 
- Posicao anterior: (430.000000, 255.000000) 
- Posicao atualizada: (432.000000, 255.000000)
-hidrante14.4: 
- Posicao anterior: (565.000000, 255.000000) 
- Posicao atualizada: (567.000000, 255.000000)
-hidrante17.1: 
- Posicao anterior: (355.000000, 310.000000) 
- Posicao atualizada: (357.000000, 310.000000)
-hidrante17.2: 
- Posicao anterior: (415.000000, 350.000000) 
- Posicao atualizada: (417.000000, 350.000000)
-hidrante17.4: 
- Posicao anterior: (295.000000, 350.000000) 
- Posicao atualizada: (297.000000, 350.000000)
-hidrante18.4: 
- Posicao anterior: (430.000000, 350.000000) 
- Posicao atualizada: (432.000000, 350.000000)
-hidrante19.4: 
- Posicao anterior: (565.000000, 350.000000) 
- Posicao atualizada: (567.000000, 350.000000)
-hidrante22.2: 
- Posicao anterior: (415.000000, 445.000000) 
- Posicao atualizada: (417.000000, 445.000000)
-hidrante22.3: 
- Posicao anterior: (355.000000, 485.000000) 
- Posicao atualizada: (357.000000, 485.000000)
-hidrante23.2: 
- Posicao anterior: (550.000000, 445.000000) 
- Posicao atualizada: (552.000000, 445.000000)
-hidrante23.3: 
- Posicao anterior: (490.000000, 485.000000) 
- Posicao atualizada: (492.000000, 485.000000)
-hidrante23.4: 
- Posicao anterior: (430.000000, 445.000000) 
- Posicao atualizada: (432.000000, 445.000000)
-hidrante24.4: 
- Posicao anterior: (565.000000, 445.000000) 
- Posicao atualizada: (567.000000, 445.000000)
-semaforo14: 
- Posicao anterior: (422.500000, 397.500000) 
- Posicao atualizada: (424.500000, 397.500000)
-radioBase12: 
- Posicao anterior: (355.000000, 255.000000) 
- Posicao atualizada: (357.000000, 255.000000)
+trns 428.000000 9.000000 466.000000 265.000000 82.000000 0.000000
+quadra3: 
+ Posicao anterior: (430.000000, 25.000000) 
+ Posicao atualizada: (512.000000, 25.000000)
+quadra4: 
+ Posicao anterior: (565.000000, 25.000000) 
+ Posicao atualizada: (647.000000, 25.000000)
+quadra8: 
+ Posicao anterior: (430.000000, 120.000000) 
+ Posicao atualizada: (512.000000, 120.000000)
+quadra9: 
+ Posicao anterior: (565.000000, 120.000000) 
+ Posicao atualizada: (647.000000, 120.000000)
+hidrante3.1: 
+ Posicao anterior: (490.000000, 25.000000) 
+ Posicao atualizada: (572.000000, 25.000000)
+hidrante4.1: 
+ Posicao anterior: (625.000000, 25.000000) 
+ Posicao atualizada: (707.000000, 25.000000)
+hidrante4.2: 
+ Posicao anterior: (685.000000, 65.000000) 
+ Posicao atualizada: (767.000000, 65.000000)
+hidrante4.4: 
+ Posicao anterior: (565.000000, 65.000000) 
+ Posicao atualizada: (647.000000, 65.000000)
+hidrante8.4: 
+ Posicao anterior: (430.000000, 160.000000) 
+ Posicao atualizada: (512.000000, 160.000000)
+hidrante9.1: 
+ Posicao anterior: (625.000000, 120.000000) 
+ Posicao atualizada: (707.000000, 120.000000)
+hidrante13.1: 
+ Posicao anterior: (490.000000, 215.000000) 
+ Posicao atualizada: (572.000000, 215.000000)
+hidrante13.2: 
+ Posicao anterior: (550.000000, 255.000000) 
+ Posicao atualizada: (632.000000, 255.000000)
+hidrante14.2: 
+ Posicao anterior: (685.000000, 255.000000) 
+ Posicao atualizada: (767.000000, 255.000000)
+radioBase4: 
+ Posicao anterior: (625.000000, 65.000000) 
+ Posicao atualizada: (707.000000, 65.000000)
 
 

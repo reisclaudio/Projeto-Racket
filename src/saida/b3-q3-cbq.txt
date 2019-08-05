@@ -1,0 +1,3 @@
+cbq 206.000000 981.000000 91.000000 lemonchiffon
+Quadras com bordas alteradas: 
+

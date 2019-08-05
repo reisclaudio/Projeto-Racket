@@ -303,12 +303,72 @@
      (percorreLista (cdr lista) indice (+ i 1))]))
 
 ;; Consulta cbq
-(define (geraCBQ lista cores)
+(define (geraCBQ lista)
+  (define x 0)
+  (define y 0)
   (cond
     [(equal? lista 1)
-     (display (string-append "cbq " (number->string (random 685)) " " (number->string (random 460)) " " (number->string (random 50 100)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQBordas)
-     (display (string-append "cbq " (number->string (random 145 565)) " " (number->string (random 95 380)) " " (number->string (random 50 100)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQCentro)
-     (display (string-append "cbq " (number->string (random 685)) " " (number->string (460)) " " (number->string (random 50)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQBordas)
+     (set! x (random 685))
+     (set! y (random 460))
+      (cond
+        [(and (> x 145) (< x 565))
+         (let ([randomY (random 1)])
+           (cond
+             [(equal? randomY 0)
+              (set! y (random 95))
+              ]
+             [(equal? randomY 1)
+              (set! y (random 365 460))
+              ]
+             )
+           )
+         ]
+        )
+     (display (string-append "cbq " (number->string x) " " (number->string y) " " (number->string (random 100 350)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQBordas)
+     (display (string-append "cbq " (number->string (random 145 565)) " " (number->string (random 95 365)) " " (number->string (random 100 350)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQCentro)
+     (display (string-append "cbq " (number->string (random 685)) " " (number->string (random 460)) " " (number->string (random 50 100)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQ)
+    ]
+    [(equal? lista 2)
+     (set! x (random 1360))
+     (set! y (random 960))
+      (cond
+        [(and (> x 145) (< x 1225))
+         (let ([randomY (random 1)])
+           (cond
+             [(equal? randomY 0)
+              (set! y (random 95))
+              ]
+             [(equal? randomY 1)
+              (set! y (random 865 960))
+              ]
+             )
+           )
+         ]
+        )
+     (display (string-append "cbq " (number->string x) " " (number->string y) " " (number->string (random 100 450)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qry2CBQBordas)
+     (display (string-append "cbq " (number->string (random 145 1225)) " " (number->string (random 95 865)) " " (number->string (random 100 450)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qry2CBQCentro)
+     (display (string-append "cbq " (number->string (random 1360)) " " (number->string (random 960)) " " (number->string (random 50 100)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qry2CBQ)
+    ]
+    [(equal? lista 3)
+     (set! x (random 2035))
+     (set! y (random 1435))
+      (cond
+        [(and (> x 145) (< x 1915))
+         (let ([randomY (random 1)])
+           (cond
+             [(equal? randomY 0)
+              (set! y (random 95))
+              ]
+             [(equal? randomY 1)
+              (set! y (random 1340 1435))
+              ]
+             )
+           )
+         ]
+        )
+     (display (string-append "cbq " (number->string x) " " (number->string y) " " (number->string (random 100 550)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qry3CBQBordas)
+     (display (string-append "cbq " (number->string (random 145 1915)) " " (number->string (random 95 1340)) " " (number->string (random 100 550)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qry3CBQCentro)
+     (display (string-append "cbq " (number->string (random 2035)) " " (number->string (random 1435)) " " (number->string (random 50 100)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qry3CBQ)
     ]
   )
 )
@@ -450,14 +510,17 @@
 (gerarComandos geo 1 cores)
 (gerarComandos geo2 2 cores)
 (gerarComandos geo3 3 cores)
+
 (gerarElementos 5 25 25 120 80 0 0 0 0 0 geo 1)
 (gerarElementos 10 25 25 120 80 0 0 0 0 0 geo2 2)
 (gerarElementos 15 25 25 120 80 0 0 0 0 0 geo3 3)
 
 (testesFormas geo geo2 geo3 qry qry2 qry3)
+
 (geraDEL 1)
 (geraDEL 2)
 (geraDEL 3)
+
 (geraTrns qryTransD 1 "d")
 (geraTrns qryTransE 1 "e")
 (geraTrns qryTransC 1 "c")
@@ -472,6 +535,10 @@
 (geraTrns qry3TransB 3 "b")
 
 (geraDQ)
+
+(geraCBQ 1)
+(geraCBQ 2)
+(geraCBQ 3)
 
 ;; Fecha os arquivos
 (close-output-port geo)

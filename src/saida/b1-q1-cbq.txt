@@ -1,0 +1,3 @@
+cbq 240.000000 291.000000 57.000000 pink
+Quadras com bordas alteradas: 
+

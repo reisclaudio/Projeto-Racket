@@ -1,18 +1,3 @@
-trns 292.000000 436.000000 259.000000 555.000000 0.000000 55.000000
-hidrante22.2: 
- Posicao anterior: (415.000000, 445.000000) 
- Posicao atualizada: (415.000000, 500.000000)
-hidrante22.3: 
- Posicao anterior: (355.000000, 485.000000) 
- Posicao atualizada: (355.000000, 540.000000)
-hidrante23.2: 
- Posicao anterior: (550.000000, 445.000000) 
- Posicao atualizada: (550.000000, 500.000000)
-hidrante23.3: 
- Posicao anterior: (490.000000, 485.000000) 
- Posicao atualizada: (490.000000, 540.000000)
-hidrante23.4: 
- Posicao anterior: (430.000000, 445.000000) 
- Posicao atualizada: (430.000000, 500.000000)
+trns 38.000000 524.000000 255.000000 208.000000 0.000000 6.000000
 
 

@@ -1,3 +1,15 @@
-trns 643.000000 648.000000 430.000000 466.000000 -99.000000 0.000000
+trns 406.000000 189.000000 376.000000 69.000000 -84.000000 0.000000
+hidrante13.1: 
+ Posicao anterior: (490.000000, 215.000000) 
+ Posicao atualizada: (406.000000, 215.000000)
+hidrante13.2: 
+ Posicao anterior: (550.000000, 255.000000) 
+ Posicao atualizada: (466.000000, 255.000000)
+hidrante14.2: 
+ Posicao anterior: (685.000000, 255.000000) 
+ Posicao atualizada: (601.000000, 255.000000)
+semaforo6: 
+ Posicao anterior: (422.500000, 207.500000) 
+ Posicao atualizada: (338.500000, 207.500000)
 
 

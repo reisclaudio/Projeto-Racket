@@ -1,0 +1,3 @@
+cbq 907.000000 381.000000 377.000000 yellow
+Quadras com bordas alteradas: quadra6 quadra15 quadra16 quadra17 quadra25 quadra26 quadra27 quadra28 quadra34 quadra35 quadra36 quadra37 quadra38 quadra44 quadra45 quadra46 quadra47 quadra48 quadra55 quadra56 quadra57 quadra58 quadra65 quadra66 quadra67 
+
