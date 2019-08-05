@@ -238,8 +238,77 @@
     (display (string-append "i? 1 " (number->string t9) " " (number->string t10) "\n") arquivoQ3)
     (display (string-append "i? 2 " (number->string t11) " " (number->string t12) "\n") arquivoQ3)
     (display "d? 1 2\n" arquivoQ3)
-    (display "bb evandroforte\n" arquivoQ3)
+    (display "bb kkkcomputero indigo\n" arquivoQ3)
 )
+
+;; Função que percorre a lista
+(define (percorreLista lista indice i)
+  (cond
+      [(equal? indice i)
+         (car lista)]
+  [#t
+     (percorreLista (cdr lista) indice (+ i 1))]))
+
+;; Consulta crd
+(define (geraDEL lista)
+  (cond
+      [(equal? lista 1)
+         (define indice (random (length listaQuadras1)))
+         (display (string-append "crd?" " " (percorreLista listaQuadras1 indice 0) "\n") qry)
+         (display (string-append "del" " " (percorreLista listaQuadras1 indice 0) "\n") qry)
+         (display (string-append "crd?" " " (percorreLista listaQuadras1 indice 0) "\n") qry)
+         (set! indice (random (length listaHidrantes1)))
+         (display (string-append "crd?" " " (percorreLista listaHidrantes1 indice 0) "\n") qry)
+         (display (string-append "del" " " (percorreLista listaHidrantes1 indice 0) "\n") qry)
+         (display (string-append "crd?" " " (percorreLista listaHidrantes1 indice 0) "\n") qry)
+         (set! indice (random (length listaSemaforos1)))
+         (display (string-append "crd?" " " (percorreLista listaSemaforos1 indice 0) "\n") qry)
+         (display (string-append "del" " " (percorreLista listaSemaforos1 indice 0) "\n") qry)
+         (display (string-append "crd?" " " (percorreLista listaSemaforos1 indice 0) "\n") qry)
+         (set! indice (random (length listaRB1)))
+         (display (string-append "crd?" " " (percorreLista listaRB1 indice 0) "\n") qry)
+         (display (string-append "del" " " (percorreLista listaRB1 indice 0) "\n") qry)
+         (display (string-append "crd?" " " (percorreLista listaRB1 indice 0) "\n") qry)]
+
+      [(equal? lista 2)
+         (define indice (random (length listaQuadras2)))
+         (display (string-append "crd?" " " (percorreLista listaQuadras2 indice 0) "\n") qry2)
+         (display (string-append "del" " " (percorreLista listaQuadras2 indice 0) "\n") qry2)
+         (display (string-append "crd?" " " (percorreLista listaQuadras2 indice 0) "\n") qry2)
+         (set! indice (random (length listaHidrantes2)))
+         (display (string-append "crd?" " " (percorreLista listaHidrantes2 indice 0) "\n") qry2)
+         (display (string-append "del" " " (percorreLista listaHidrantes2 indice 0) "\n") qry2)
+         (display (string-append "crd?" " " (percorreLista listaHidrantes2 indice 0) "\n") qry2)
+         (set! indice (random (length listaSemaforos2)))
+         (display (string-append "crd?" " " (percorreLista listaSemaforos2 indice 0) "\n") qry2)
+         (display (string-append "del" " " (percorreLista listaSemaforos2 indice 0) "\n") qry2)
+         (display (string-append "crd?" " " (percorreLista listaSemaforos2 indice 0) "\n") qry2)
+         (set! indice (random (length listaRB2)))
+         (display (string-append "crd?" " " (percorreLista listaRB2 indice 0) "\n") qry2)
+         (display (string-append "del" " " (percorreLista listaRB2 indice 0) "\n") qry2)
+         (display (string-append "crd?" " " (percorreLista listaRB2 indice 0) "\n") qry2)]
+      
+      [(equal? lista 3)
+         (define indice (random (length listaQuadras3)))
+         (display (string-append "crd?" " " (percorreLista listaQuadras3 indice 0) "\n") qry3)
+         (display (string-append "del" " " (percorreLista listaQuadras3 indice 0) "\n") qry3)
+         (display (string-append "crd?" " " (percorreLista listaQuadras3 indice 0) "\n") qry3)
+         (set! indice (random (length listaHidrantes3)))
+         (display (string-append "crd?" " " (percorreLista listaHidrantes3 indice 0) "\n") qry3)
+         (display (string-append "del" " " (percorreLista listaHidrantes3 indice 0) "\n") qry3)
+         (display (string-append "crd?" " " (percorreLista listaHidrantes3 indice 0) "\n") qry3)
+         (set! indice (random (length listaSemaforos3)))
+         (display (string-append "crd?" " " (percorreLista listaSemaforos3 indice 0) "\n") qry3)
+         (display (string-append "del" " " (percorreLista listaSemaforos3 indice 0) "\n") qry3)
+         (display (string-append "crd?" " " (percorreLista listaSemaforos3 indice 0) "\n") qry3)
+         (set! indice (random (length listaRB3)))
+         (display (string-append "crd?" " " (percorreLista listaRB3 indice 0) "\n") qry3)
+         (display (string-append "del" " " (percorreLista listaRB3 indice 0) "\n") qry3)
+         (display (string-append "crd?" " " (percorreLista listaRB3 indice 0) "\n") qry3)]))
+
+
+
+
 
 
 
@@ -249,6 +318,9 @@
 (gerarElementos 15 25 25 120 80 0 0 0 0 0 geo3 3)
 
 (testesFormas geo geo2 geo3 qry qry2 qry3)
+(geraDEL 1)
+(geraDEL 2)
+(geraDEL 3)
 
 (close-output-port geo)
 (close-output-port geo2)
