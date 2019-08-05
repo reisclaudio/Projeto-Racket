@@ -1,3 +1,3 @@
-cbq 1742.000000 1144.000000 313.000000 black
-Quadras com bordas alteradas: quadra147 quadra148 quadra161 quadra162 quadra163 quadra176 quadra177 quadra178 quadra179 quadra191 quadra192 quadra193 quadra194 quadra206 quadra207 quadra208 quadra222 
+cbq 1817.000000 403.000000 548.000000 black
+Quadras com bordas alteradas: quadra11 quadra12 quadra13 quadra14 quadra25 quadra26 quadra27 quadra28 quadra29 quadra40 quadra41 quadra42 quadra43 quadra44 quadra55 quadra56 quadra57 quadra58 quadra59 quadra70 quadra71 quadra72 quadra73 quadra74 quadra85 quadra86 quadra87 quadra88 quadra89 quadra100 quadra101 quadra102 quadra103 quadra104 quadra116 quadra117 quadra118 quadra119 quadra132 quadra133 quadra134 
 

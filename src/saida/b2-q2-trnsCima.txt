@@ -1,15 +1,9 @@
-trns 96.000000 914.000000 265.000000 905.000000 0.000000 -93.000000
-hidrante91.2: 
- Posicao anterior: (280.000000, 920.000000) 
- Posicao atualizada: (280.000000, 827.000000)
-hidrante91.4: 
- Posicao anterior: (160.000000, 920.000000) 
- Posicao atualizada: (160.000000, 827.000000)
-hidrante92.3: 
- Posicao anterior: (355.000000, 960.000000) 
- Posicao atualizada: (355.000000, 867.000000)
-semaforo81: 
- Posicao anterior: (152.500000, 967.500000) 
- Posicao atualizada: (152.500000, 874.500000)
+trns 1135.000000 931.000000 242.000000 634.000000 0.000000 -53.000000
+hidrante98.3: 
+ Posicao anterior: (1165.000000, 960.000000) 
+ Posicao atualizada: (1165.000000, 907.000000)
+hidrante99.3: 
+ Posicao anterior: (1300.000000, 960.000000) 
+ Posicao atualizada: (1300.000000, 907.000000)
 
 

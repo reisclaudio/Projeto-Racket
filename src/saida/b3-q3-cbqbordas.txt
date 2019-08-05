@@ -1,3 +1,3 @@
-cbq 1091.000000 52.000000 139.000000 purple
-Quadras com bordas alteradas: quadra7 
+cbq 1433.000000 8.000000 321.000000 blue
+Quadras com bordas alteradas: quadra9 quadra10 quadra11 quadra24 quadra25 quadra26 quadra40 
 

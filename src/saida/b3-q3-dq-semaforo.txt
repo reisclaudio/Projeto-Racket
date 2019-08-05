@@ -1,4 +1,4 @@
-dq L2 semaforo71 390.000000
-Equipamento Urbano: semaforo71 x = 287.500000 y = 587.500000
-Quadras removidas: quadra45 quadra46 quadra47 quadra48 quadra60 quadra61 quadra62 quadra63 quadra75 quadra76 quadra77 quadra78 quadra90 quadra91 quadra92 quadra93 quadra105 quadra106 quadra107 quadra108 quadra120 quadra121 quadra122 quadra123 
+dq L1 semaforo90 267.000000
+Equipamento Urbano: semaforo90 x = 962.500000 y = 682.500000
+Quadras removidas: quadra96 quadra97 quadra111 quadra112 
 

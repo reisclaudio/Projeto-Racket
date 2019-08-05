@@ -1,3 +1,3 @@
-cbq 179.000000 86.000000 420.000000 orange
-Quadras com bordas alteradas: quadra0 quadra1 quadra2 quadra3 quadra10 quadra11 quadra12 quadra13 quadra20 quadra21 quadra22 quadra30 quadra31 quadra32 quadra41 
+cbq 615.000000 67.000000 206.000000 midnightblue
+Quadras com bordas alteradas: quadra3 quadra4 quadra14 
 

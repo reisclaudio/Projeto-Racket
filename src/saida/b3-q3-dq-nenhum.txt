@@ -1,4 +1,4 @@
-dq L2 radioBase188 1.000000
-Equipamento Urbano: radioBase188 x = 1165.000000 y = 1205.000000
+dq L2 radioBase216 1.000000
+Equipamento Urbano: radioBase216 x = 895.000000 y = 1395.000000
 Quadras removidas: 
 
