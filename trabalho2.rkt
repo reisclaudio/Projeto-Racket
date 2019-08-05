@@ -13,18 +13,38 @@
 (define qryTransE (open-output-file "casosDeTeste/q1-testes/q1-trnsEsq.qry"))
 (define qryTransC (open-output-file "casosDeTeste/q1-testes/q1-trnsCima.qry"))
 (define qryTransB (open-output-file "casosDeTeste/q1-testes/q1-trnsBaixo.qry"))
+(define qryCBQBordas (open-output-file "casosDeTeste/q1-testes/q1-cbqbordas.qry"))
+(define qryCBQCentro (open-output-file "casosDeTeste/q1-testes/q1-cbqcentro.qry"))
+(define qryCBQ (open-output-file "casosDeTeste/q1-testes/q1-cbq.qry"))
+(define qryDQ (open-output-file "casosDeTeste/q1-testes/q1-dq.qry"))
 (define qry2 (open-output-file "casosDeTeste/q2-testes/q2.qry"))
 (define qry2DEL (open-output-file "casosDeTeste/q2-testes/q2-del.qry"))
 (define qry2TransD (open-output-file "casosDeTeste/q2-testes/q2-trnsDir.qry"))
 (define qry2TransE (open-output-file "casosDeTeste/q2-testes/q2-trnsEsq.qry"))
 (define qry2TransC (open-output-file "casosDeTeste/q2-testes/q2-trnsCima.qry"))
 (define qry2TransB (open-output-file "casosDeTeste/q2-testes/q2-trnsBaixo.qry"))
+(define qry2CBQBordas (open-output-file "casosDeTeste/q2-testes/q2-cbqbordas.qry"))
+(define qry2CBQCentro (open-output-file "casosDeTeste/q2-testes/q2-cbqcentro.qry"))
+(define qry2CBQ (open-output-file "casosDeTeste/q2-testes/q2-cbq.qry"))
+(define qry2DQ1 (open-output-file "casosDeTeste/q2-testes/q2-dq1.qry"))
+(define qry2DQ2 (open-output-file "casosDeTeste/q2-testes/q2-dq2.qry"))
+(define qry2DQ3 (open-output-file "casosDeTeste/q2-testes/q2-dq3.qry"))
+(define qry2DQ4 (open-output-file "casosDeTeste/q2-testes/q2-dq4.qry"))
 (define qry3 (open-output-file "casosDeTeste/q3-testes/q3.qry"))
 (define qry3DEL (open-output-file "casosDeTeste/q3-testes/q3-del.qry"))
 (define qry3TransD (open-output-file "casosDeTeste/q3-testes/q3-trnsDir.qry"))
 (define qry3TransE (open-output-file "casosDeTeste/q3-testes/q3-trnsEsq.qry"))
 (define qry3TransC (open-output-file "casosDeTeste/q3-testes/q3-trnsCima.qry"))
 (define qry3TransB (open-output-file "casosDeTeste/q3-testes/q3-trnsBaixo.qry"))
+(define qry3CBQBordas (open-output-file "casosDeTeste/q3-testes/q3-cbqbordas.qry"))
+(define qry3CBQCentro (open-output-file "casosDeTeste/q3-testes/q3-cbqcentro.qry"))
+(define qry3CBQ (open-output-file "casosDeTeste/q3-testes/q3-cbq.qry"))
+(define qry3DQ1 (open-output-file "casosDeTeste/q3-testes/q3-dq1.qry"))
+(define qry3DQ2 (open-output-file "casosDeTeste/q3-testes/q3-dq2.qry"))
+(define qry3DQ3 (open-output-file "casosDeTeste/q3-testes/q3-dq3.qry"))
+(define qry3DQ4 (open-output-file "casosDeTeste/q3-testes/q3-dq4.qry"))
+(define qry3DQ5 (open-output-file "casosDeTeste/q3-testes/q3-dq5.qry"))
+(define qry3DQ6 (open-output-file "casosDeTeste/q3-testes/q3-dq6.qry"))
 
 
 
@@ -285,6 +305,17 @@
   [#t
      (percorreLista (cdr lista) indice (+ i 1))]))
 
+;; Consulta cbq
+(define (geraCBQ lista cores)
+  (cond
+    [(equal? lista 1)
+     (display (string-append "cbq " (number->string (random 685)) " " (number->string (random 460)) " " (number->string (random 50 100)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQBordas)
+     (display (string-append "cbq " (number->string (random 145 565)) " " (number->string (random 95 380)) " " (number->string (random 50 100)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQCentro)
+     (display (string-append "cbq " (number->string (random 685)) " " (number->string (460)) " " (number->string (random 50)) " " (percorreLista cores (random (- (length cores) 1)) 0) "\n") qryCBQBordas)
+    ]
+  )
+)
+
 ;; Consulta crd
 (define (geraDEL lista)
   (cond
@@ -431,6 +462,15 @@
 (close-output-port qry)
 (close-output-port qry2)
 (close-output-port qry3)
+(close-output-port qryCBQBordas)
+(close-output-port qryCBQCentro)
+(close-output-port qry2CBQ)
+(close-output-port qry2CBQBordas)
+(close-output-port qry2CBQCentro)
+(close-output-port qry2CBQ)
+(close-output-port qry3CBQBordas)
+(close-output-port qry3CBQCentro)
+(close-output-port qry3CBQ)
 (close-output-port qryDEL)
 (close-output-port qry2DEL)
 (close-output-port qry3DEL)
@@ -446,5 +486,19 @@
 (close-output-port qry3TransE)
 (close-output-port qry3TransC)
 (close-output-port qry3TransB)
+(close-output-port qryDQ)
+(close-output-port qry2DQ1)
+(close-output-port qry2DQ2)
+(close-output-port qry2DQ3)
+(close-output-port qry2DQ4)
+(close-output-port qry3DQ1)
+(close-output-port qry3DQ2)
+(close-output-port qry3DQ3)
+(close-output-port qry3DQ4)
+(close-output-port qry3DQ5)
+(close-output-port qry3DQ6)
+
+
+
 
 
