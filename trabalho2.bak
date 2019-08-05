@@ -33,32 +33,13 @@
 (define listaSemaforos2 (list null))
 (define listaSemaforos3 (list null))
 
-;;Cores do SVG
-(define cores (list "red" "blue" "yellow" "black" "orange" "pink" "green" "purple" "peru" "lemonchiffon" "midnightblue" null))
+
 
 ;; Recebe uma string e um numero a string de ambos concatenados
 (define (gerarId string numero)
     (string-append string (number->string numero)))
 
-;; Coloca o NX, CQ, CH, CR, CS e SW no .geo
-(define (gerarComandos arquivo tamanho cores)
-  (cond
-    [(equal? tamanho 1)
-     (display "nx 2 25 100 16 13\n" arquivo)
-    ]
-    [(equal? tamanho 2)
-     (display "nx 2 100 400 81 51" arquivo)
-    ]
-    [(equal? tamanho 3)
-     (display "nx 2 225 900 196 113" arquivo)
-    ]
-  )
-  (display (string-append "cq " (percorreLista cores (random (length cores)) 0) " " (percorreLista cores (random (length cores)) 0) " 1\n") arquivo)
-  (display (string-append "ch " (percorreLista cores (random (length cores)) 0) " " (percorreLista cores (random (length cores)) 0) " 1\n") arquivo)
-  (display (string-append "cr " (percorreLista cores (random (length cores)) 0) " " (percorreLista cores (random (length cores)) 0) " 1\n") arquivo)
-  (display (string-append "cs " (percorreLista cores (random (length cores)) 0) " " (percorreLista cores (random (length cores)) 0) " 1\n") arquivo)
-  (display "sw 1 1\n" arquivo)
-)
+
 
 (define (gerarElementos tamanhoCidade x y w h i contadorQuadras contadorHidrantes contadorRadiosBase boleanoSemaforo arquivo lista)
     (cond
@@ -332,9 +313,6 @@
 
 
 ;; Bloco de codigo piloto
-(gerarComandos geo 1 cores)
-(gerarComandos geo2 2 cores)
-(gerarComandos geo3 3 cores)
 (gerarElementos 5 25 25 120 80 0 0 0 0 0 geo 1)
 (gerarElementos 10 25 25 120 80 0 0 0 0 0 geo2 2)
 (gerarElementos 15 25 25 120 80 0 0 0 0 0 geo3 3)
