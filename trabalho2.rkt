@@ -70,6 +70,9 @@
 ;;Cores do SVG
 (define cores (list "red" "blue" "yellow" "black" "orange" "pink" "green" "purple" "peru" "lemonchiffon" "midnightblue" null))
 
+;; Faces dos predios
+(define faces(list "N" "S" "L" "O"))
+
 ;; Recebe uma string e um numero a string de ambos concatenados
 (define (gerarId string numero)
     (string-append string (number->string numero)))
@@ -101,9 +104,11 @@
            (gerarElementos tamanhoCidade x y w h i contadorQuadras contadorHidrantes contadorRadiosBase 1 arquivo lista)]
 
         [(equal? contadorQuadras(- (* tamanhoCidade tamanhoCidade) 1))
+         
            (imprimeQuadras x y w h contadorQuadras arquivo lista)
            (imprimeHidrantes x y contadorHidrantes arquivo lista)
-           (imprimeRadiosBase x y contadorRadiosBase arquivo lista)]
+           (imprimeRadiosBase x y contadorRadiosBase arquivo lista)
+        ]
 
         [(equal? i (- tamanhoCidade 1))
            (imprimeQuadras x y w h contadorQuadras arquivo lista)
@@ -122,9 +127,18 @@
 (define (imprimeQuadras x y w h id arquivo lista)
     (display (string-append "q " (gerarId "quadra" id) " " (number->string x) " " (number->string y) " " (number->string w) " " (number->string h) "\n") arquivo)
     (cond
-        [(equal? lista 1) (set! listaQuadras1 (cons (gerarId "quadra" id) listaQuadras1))]
-        [(equal? lista 2) (set! listaQuadras2 (cons (gerarId "quadra" id) listaQuadras2))]
-        [(equal? lista 3) (set! listaQuadras3 (cons (gerarId "quadra" id) listaQuadras3))]
+        [(equal? lista 1)
+            (set! listaQuadras1 (cons (gerarId "quadra" id) listaQuadras1))
+            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id) (percorreLista faces (random (-(length faces)1))0) 50 75 10) arquivo)])
+        ]
+        [(equal? lista 2)
+            (set! listaQuadras2 (cons (gerarId "quadra" id) listaQuadras2))
+            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id) (percorreLista faces (random (-(length faces)1))0) 50 75 10) arquivo)])
+        ]
+        [(equal? lista 3)
+            (set! listaQuadras3 (cons (gerarId "quadra" id) listaQuadras3))
+            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id) (percorreLista faces (random (-(length faces)1))0) 50 75 10) arquivo)])
+        ]
     )
 )
 
@@ -502,7 +516,6 @@
   (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaRB3 (random (-(length listaRB3)1))0) " " (number->string(random 100 650))) qry3DQ3)
   (display (string-append "dq L" (number->string(random 1 3)) " " (percorreLista listaRB3 (random (-(length listaRB3)1))0) " " "1") qry3DQ4)
 )
-
 
 
 
