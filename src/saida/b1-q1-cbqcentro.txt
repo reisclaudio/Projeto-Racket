@@ -1,3 +1,3 @@
-cbq 476.000000 234.000000 165.000000 blue
-Quadras com bordas alteradas: quadra8 quadra13 
+cbq 552.000000 213.000000 280.000000 yellow
+Quadras com bordas alteradas: quadra3 quadra4 quadra7 quadra8 quadra9 quadra12 quadra13 quadra14 quadra18 quadra19 
 

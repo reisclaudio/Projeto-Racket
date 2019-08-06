@@ -1,28 +1,28 @@
-crd? quadra21
-Quadra x = 160.000000 y = 405.000000 w = 120.000000 h = 80.000000
+crd? quadra11
+Quadra x = 160.000000 y = 215.000000 w = 120.000000 h = 80.000000
 
-del quadra21
-Quadra x = 160.000000 y = 405.000000 w = 120.000000 h = 80.000000
+del quadra11
+Quadra x = 160.000000 y = 215.000000 w = 120.000000 h = 80.000000
 
-crd? quadra21
+crd? quadra11
 Elemento nao encontrado!
 
-crd? hidrante11.1
-Hidrante x = 220.000000 y = 215.000000
+crd? hidrante14.4
+Hidrante x = 565.000000 y = 255.000000
 
-del hidrante11.1
-Hidrante x = 220.000000 y = 215.000000
+del hidrante14.4
+Hidrante x = 565.000000 y = 255.000000
 
-crd? hidrante11.1
+crd? hidrante14.4
 Elemento nao encontrado!
 
-crd? semaforo6
-Semaforo x = 422.500000 y = 207.500000
+crd? semaforo2
+Semaforo x = 422.500000 y = 112.500000
 
-del semaforo6
-Semaforo x = 422.500000 y = 207.500000
+del semaforo2
+Semaforo x = 422.500000 y = 112.500000
 
-crd? semaforo6
+crd? semaforo2
 Elemento nao encontrado!
 
 crd? radioBase2

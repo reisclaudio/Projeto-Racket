@@ -1,3 +1,3 @@
-cbq 915.000000 526.000000 132.000000 purple
-Quadras com bordas alteradas: quadra56 
+cbq 529.000000 112.000000 448.000000 pink
+Quadras com bordas alteradas: quadra1 quadra2 quadra3 quadra4 quadra5 quadra6 quadra11 quadra12 quadra13 quadra14 quadra15 quadra16 quadra21 quadra22 quadra23 quadra24 quadra25 quadra32 quadra33 quadra34 quadra35 quadra42 quadra43 quadra44 
 

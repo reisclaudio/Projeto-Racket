@@ -1,36 +1,36 @@
-crd? quadra116
-Quadra x = 1510.000000 y = 690.000000 w = 120.000000 h = 80.000000
+crd? quadra169
+Quadra x = 565.000000 y = 1070.000000 w = 120.000000 h = 80.000000
 
-del quadra116
-Quadra x = 1510.000000 y = 690.000000 w = 120.000000 h = 80.000000
+del quadra169
+Quadra x = 565.000000 y = 1070.000000 w = 120.000000 h = 80.000000
 
-crd? quadra116
+crd? quadra169
 Elemento nao encontrado!
 
-crd? hidrante84.2
-Hidrante x = 1360.000000 y = 540.000000
+crd? hidrante25.3
+Hidrante x = 1435.000000 y = 200.000000
 
-del hidrante84.2
-Hidrante x = 1360.000000 y = 540.000000
+del hidrante25.3
+Hidrante x = 1435.000000 y = 200.000000
 
-crd? hidrante84.2
+crd? hidrante25.3
 Elemento nao encontrado!
 
-crd? semaforo16
-Semaforo x = 422.500000 y = 207.500000
+crd? semaforo144
+Semaforo x = 692.500000 y = 1062.500000
 
-del semaforo16
-Semaforo x = 422.500000 y = 207.500000
+del semaforo144
+Semaforo x = 692.500000 y = 1062.500000
 
-crd? semaforo16
+crd? semaforo144
 Elemento nao encontrado!
 
-crd? radioBase6
-Radio base x = 895.000000 y = 65.000000
+crd? radioBase64
+Radio base x = 625.000000 y = 445.000000
 
-del radioBase6
-Radio base x = 895.000000 y = 65.000000
+del radioBase64
+Radio base x = 625.000000 y = 445.000000
 
-crd? radioBase6
+crd? radioBase64
 Elemento nao encontrado!
 

@@ -1,1 +1,4 @@
+O script apagartestes.py permite que o programa racket seja gerado novamente para a execução de
+uma nove série de testes
 
+Os arquivos .svg e .txt gerados ficam em ./src/saida

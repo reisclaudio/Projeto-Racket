@@ -1,3 +1,3 @@
-cbq 1433.000000 8.000000 321.000000 blue
-Quadras com bordas alteradas: quadra9 quadra10 quadra11 quadra24 quadra25 quadra26 quadra40 
+cbq 1171.000000 45.000000 502.000000 lemonchiffon
+Quadras com bordas alteradas: quadra5 quadra6 quadra7 quadra8 quadra9 quadra10 quadra11 quadra20 quadra21 quadra22 quadra23 quadra24 quadra25 quadra26 quadra36 quadra37 quadra38 quadra39 quadra40 quadra51 quadra52 quadra53 quadra54 quadra55 quadra67 quadra68 quadra69 
 

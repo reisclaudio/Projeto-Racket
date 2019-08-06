@@ -129,15 +129,15 @@
     (cond
         [(equal? lista 1)
             (set! listaQuadras1 (cons (gerarId "quadra" id) listaQuadras1))
-            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id) (percorreLista faces (random (-(length faces)1))0) 50 75 10) arquivo)])
+            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id)" "(percorreLista faces (random (-(length faces)1))0)" 50 75 10\n") arquivo)])
         ]
         [(equal? lista 2)
             (set! listaQuadras2 (cons (gerarId "quadra" id) listaQuadras2))
-            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id) (percorreLista faces (random (-(length faces)1))0) 50 75 10) arquivo)])
+            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id)" "(percorreLista faces (random (-(length faces)1))0)" 50 75 10\n") arquivo)])
         ]
         [(equal? lista 3)
             (set! listaQuadras3 (cons (gerarId "quadra" id) listaQuadras3))
-            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id) (percorreLista faces (random (-(length faces)1))0) 50 75 10) arquivo)])
+            (cond [(< (random 5) 3) (display (string-append "prd predio" (number->string id)" "(percorreLista faces (random (-(length faces)1))0)" 50 75 10\n") arquivo)])
         ]
     )
 )

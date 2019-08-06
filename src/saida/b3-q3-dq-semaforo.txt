@@ -1,4 +1,4 @@
-dq L1 semaforo90 267.000000
-Equipamento Urbano: semaforo90 x = 962.500000 y = 682.500000
-Quadras removidas: quadra96 quadra97 quadra111 quadra112 
+dq L1 semaforo80 120.000000
+Equipamento Urbano: semaforo80 x = 1502.500000 y = 587.500000
+Quadras removidas: 
 

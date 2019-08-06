@@ -1,15 +1,21 @@
-trns 519.000000 342.000000 489.000000 235.000000 -10.000000 0.000000
-quadra24: 
- Posicao anterior: (565.000000, 405.000000) 
- Posicao atualizada: (555.000000, 405.000000)
+trns 570.000000 328.000000 140.000000 355.000000 -33.000000 0.000000
 hidrante19.2: 
  Posicao anterior: (685.000000, 350.000000) 
- Posicao atualizada: (675.000000, 350.000000)
-hidrante24.4: 
- Posicao anterior: (565.000000, 445.000000) 
- Posicao atualizada: (555.000000, 445.000000)
-semaforo15: 
- Posicao anterior: (557.500000, 397.500000) 
- Posicao atualizada: (547.500000, 397.500000)
+ Posicao atualizada: (652.000000, 350.000000)
+hidrante19.3: 
+ Posicao anterior: (625.000000, 390.000000) 
+ Posicao atualizada: (592.000000, 390.000000)
+hidrante24.1: 
+ Posicao anterior: (625.000000, 405.000000) 
+ Posicao atualizada: (592.000000, 405.000000)
+hidrante24.2: 
+ Posicao anterior: (685.000000, 445.000000) 
+ Posicao atualizada: (652.000000, 445.000000)
+hidrante24.3: 
+ Posicao anterior: (625.000000, 485.000000) 
+ Posicao atualizada: (592.000000, 485.000000)
+radioBase24: 
+ Posicao anterior: (625.000000, 445.000000) 
+ Posicao atualizada: (592.000000, 445.000000)
 
 

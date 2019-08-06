@@ -1,4 +1,4 @@
-dq L1 radioBase122 638.000000
-Equipamento Urbano: radioBase122 x = 355.000000 y = 825.000000
-Quadras removidas: quadra47 quadra61 quadra62 quadra63 quadra76 quadra77 quadra78 quadra90 quadra91 quadra92 quadra93 quadra94 quadra105 quadra106 quadra107 quadra108 quadra109 quadra110 quadra120 quadra121 quadra122 quadra123 quadra124 quadra125 quadra135 quadra136 quadra137 quadra138 quadra139 quadra140 quadra150 quadra151 quadra152 quadra153 quadra154 quadra166 quadra167 quadra168 quadra181 quadra182 quadra183 quadra197 
+dq L1 radioBase214 251.000000
+Equipamento Urbano: radioBase214 x = 625.000000 y = 1395.000000
+Quadras removidas: quadra199 quadra213 quadra214 quadra215 
 

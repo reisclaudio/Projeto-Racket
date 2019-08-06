@@ -1,6 +1,54 @@
-trns 46.000000 480.000000 283.000000 264.000000 0.000000 15.000000
-hidrante20.3: 
- Posicao anterior: (85.000000, 485.000000) 
- Posicao atualizada: (85.000000, 500.000000)
+trns 290.000000 196.000000 564.000000 118.000000 0.000000 79.000000
+quadra12: 
+ Posicao anterior: (295.000000, 215.000000) 
+ Posicao atualizada: (295.000000, 294.000000)
+quadra13: 
+ Posicao anterior: (430.000000, 215.000000) 
+ Posicao atualizada: (430.000000, 294.000000)
+quadra14: 
+ Posicao anterior: (565.000000, 215.000000) 
+ Posicao atualizada: (565.000000, 294.000000)
+hidrante7.3: 
+ Posicao anterior: (355.000000, 200.000000) 
+ Posicao atualizada: (355.000000, 279.000000)
+hidrante8.3: 
+ Posicao anterior: (490.000000, 200.000000) 
+ Posicao atualizada: (490.000000, 279.000000)
+hidrante9.3: 
+ Posicao anterior: (625.000000, 200.000000) 
+ Posicao atualizada: (625.000000, 279.000000)
+hidrante12.2: 
+ Posicao anterior: (415.000000, 255.000000) 
+ Posicao atualizada: (415.000000, 334.000000)
+hidrante12.3: 
+ Posicao anterior: (355.000000, 295.000000) 
+ Posicao atualizada: (355.000000, 374.000000)
+hidrante13.3: 
+ Posicao anterior: (490.000000, 295.000000) 
+ Posicao atualizada: (490.000000, 374.000000)
+hidrante13.4: 
+ Posicao anterior: (430.000000, 255.000000) 
+ Posicao atualizada: (430.000000, 334.000000)
+hidrante14.1: 
+ Posicao anterior: (625.000000, 215.000000) 
+ Posicao atualizada: (625.000000, 294.000000)
+hidrante14.2: 
+ Posicao anterior: (685.000000, 255.000000) 
+ Posicao atualizada: (685.000000, 334.000000)
+hidrante14.3: 
+ Posicao anterior: (625.000000, 295.000000) 
+ Posicao atualizada: (625.000000, 374.000000)
+hidrante14.4: 
+ Posicao anterior: (565.000000, 255.000000) 
+ Posicao atualizada: (565.000000, 334.000000)
+semaforo6: 
+ Posicao anterior: (422.500000, 207.500000) 
+ Posicao atualizada: (422.500000, 286.500000)
+semaforo7: 
+ Posicao anterior: (557.500000, 207.500000) 
+ Posicao atualizada: (557.500000, 286.500000)
+radioBase12: 
+ Posicao anterior: (355.000000, 255.000000) 
+ Posicao atualizada: (355.000000, 334.000000)
 
 

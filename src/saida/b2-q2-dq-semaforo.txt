@@ -1,4 +1,4 @@
-dq L1 semaforo5 154.000000
-Equipamento Urbano: semaforo5 x = 827.500000 y = 112.500000
+dq L1 semaforo17 123.000000
+Equipamento Urbano: semaforo17 x = 1232.500000 y = 207.500000
 Quadras removidas: 
 
